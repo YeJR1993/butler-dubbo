@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73caa398-db0e-424f-89e3-32e4c8bcf332" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/butler-common/target/" />
+    <ignored path="$PROJECT_DIR$/butler-server/target/" />
+    <ignored path="$PROJECT_DIR$/butler-admin/target/" />
+    <ignored path="$PROJECT_DIR$/butler-app/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/MenuDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/MenuDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="58" column="35" selection-start-line="53" selection-start-column="4" selection-end-line="58" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/butler-admin/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/butler-app/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/boot/dubbo-spring-boot-starter/0.2.0/dubbo-spring-boot-starter-0.2.0.pom">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-856" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>web</find>
+      <find>mysql</find>
+      <find>sqlSessionFactory</find>
+      <find>devtools</find>
+      <find>insertRoleMenu</find>
+      <find>cacheEnabled</find>
+      <find>lazy-loading-enabled</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/butler-admin-vue/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/butler-admin-vue/src/components/Hello.vue" />
+        <option value="$PROJECT_DIR$/butler-admin-vue/src/App.vue" />
+        <option value="$PROJECT_DIR$/butler-admin-vue/src/views/login/index.vue" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/Utils/PageInfo.java" />
+        <option value="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/ButlerAppApplication.java" />
+        <option value="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/ButlerServerApplication.java" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UserController.java" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/ButlerAdminApplication.java" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/common/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/resources/templates/modules/login.ftl" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/config/RedisJedisConfig.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/Utils/SpringContextHolder.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/redis/JedisUtils.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/Utils/RandomValidateCodeUtil.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/IndexController.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/Utils/keyutils/SysModules.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/Utils/constant/EsConstants.java" />
+        <option value="$PROJECT_DIR$/butler-common/pom.xml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/constant/EsConstants.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/UserUtil.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/RandomValidateCodeUtil.java" />
+        <option value="$PROJECT_DIR$/butler-server/src/test/java/com/tuxiaoer/shanghai/ButlerServerApplicationTest.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/redis/rediskey/KeyPrefix.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/keyutils/SysModules.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/ShiroRedisSessionDao.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/MyUsernamePasswordToken.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java" />
+        <option value="$PROJECT_DIR$/butler-app/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/butler-admin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java" />
+        <option value="$PROJECT_DIR$/butler-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Menu.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/UserDao.xml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/UserService.java" />
+        <option value="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/UserController.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/RoleDao.xml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/MenuDao.xml" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/butler-server/pom.xml" />
+        <option value="$PROJECT_DIR$/butler-app/pom.xml" />
+        <option value="$PROJECT_DIR$/butler-admin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="butler-dubbo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="butler-dubbo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="520" />
+    <option name="y" value="45" />
+    <option name="width" value="1477" />
+    <option name="height" value="961" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
+              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
+              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="butler-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
+              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554277983964" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/butler-server/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.42482916" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ShangHaiTuxiaoer\butler-dubbo\butler-app\src\main\java\com\tuxiaoer\shanghai\common\config" />
+      <recent name="D:\ShangHaiTuxiaoer\butler-dubbo\butler-common\src\main\java\com\tuxiaoer\shanghai\modules\common\config" />
+      <recent name="D:\ShangHaiTuxiaoer\butler-dubbo\butler-common\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tuxiaoer.shanghai.modules.system.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyWorkerspace\butler-dubbo\butler-server\src\main\resources" />
+      <recent name="D:\MyWorkerspace\butler-dubbo\butler-common\src\main\resources\mappings\modules\system" />
+      <recent name="D:\MyWorkerspace\butler-dubbo\butler-common\src\main\java\com\tuxiaoer\shanghai\modules\system\entity" />
+      <recent name="D:\MyWorkerspace\butler-dubbo\butler-common\src\main\java\com\tuxiaoer\shanghai\modules\common" />
+      <recent name="D:\MyWorkerspace\butler-dubbo\butler-common\src\main\java\com\tuxiaoer\shanghai\modules\common\utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.17965367" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ButlerServerApplication">
+    <configuration name="ButlerServerApplicationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butler-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tuxiaoer.shanghai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tuxiaoer.shanghai" />
+      <option name="MAIN_CLASS_NAME" value="com.tuxiaoer.shanghai.ButlerServerApplicationTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButlerAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="butler-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tuxiaoer.shanghai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tuxiaoer.shanghai.ButlerAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButlerAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="butler-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tuxiaoer.shanghai.ButlerAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButlerServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="butler-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tuxiaoer.shanghai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tuxiaoer.shanghai.ButlerServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/butler-admin-vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ButlerServerApplicationTest.test" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.ButlerAppApplication" />
+      <item itemvalue="Spring Boot.ButlerServerApplication" />
+      <item itemvalue="Spring Boot.ButlerAdminApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ButlerAdminApplication" />
+        <item itemvalue="Spring Boot.ButlerServerApplication" />
+        <item itemvalue="JUnit.ButlerServerApplicationTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">C:\Users\YeJR\AppData\Roaming\Subversion</configuration>
+    <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73caa398-db0e-424f-89e3-32e4c8bcf332" name="Default Changelist" comment="" />
+      <created>1554167218344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554167218344</updated>
+      <workItem from="1554167219697" duration="750000" />
+      <workItem from="1554172100587" duration="600000" />
+      <workItem from="1554185138357" duration="603000" />
+      <workItem from="1554195260790" duration="2678000" />
+      <workItem from="1554252536323" duration="1971000" />
+      <workItem from="1554256038173" duration="1186000" />
+      <workItem from="1554260572367" duration="605000" />
+      <workItem from="1554271312451" duration="604000" />
+      <workItem from="1554274398978" duration="1166000" />
+      <workItem from="1554275987277" duration="2020000" />
+      <workItem from="1554278136525" duration="837000" />
+      <workItem from="1554281547871" duration="57000" />
+      <workItem from="1554281896136" duration="289000" />
+      <workItem from="1554283041099" duration="78000" />
+      <workItem from="1554285656201" duration="256000" />
+      <workItem from="1554339255527" duration="3396000" />
+      <workItem from="1554344091554" duration="10000" />
+      <workItem from="1554359547481" duration="2536000" />
+      <workItem from="1554367373331" duration="510000" />
+      <workItem from="1554367899532" duration="4457000" />
+      <workItem from="1554684446383" duration="1004000" />
+      <workItem from="1554685469605" duration="1221000" />
+      <workItem from="1554690478768" duration="9877000" />
+      <workItem from="1554708267438" duration="5000" />
+      <workItem from="1554711257282" duration="4424000" />
+      <workItem from="1554771175210" duration="1266000" />
+      <workItem from="1554775079485" duration="2396000" />
+      <workItem from="1554789674949" duration="746000" />
+      <workItem from="1554792377557" duration="976000" />
+      <workItem from="1554793476548" duration="80000" />
+      <workItem from="1554793755605" duration="1826000" />
+      <workItem from="1554797292763" duration="90000" />
+      <workItem from="1554798041526" duration="479000" />
+      <workItem from="1554798736442" duration="1044000" />
+      <workItem from="1554799859925" duration="1324000" />
+      <workItem from="1554801253168" duration="1149000" />
+      <workItem from="1554802784509" duration="1498000" />
+      <workItem from="1554857240547" duration="615000" />
+      <workItem from="1554858020355" duration="1272000" />
+      <workItem from="1554861924786" duration="5000" />
+      <workItem from="1554862299257" duration="6180000" />
+      <workItem from="1554868688731" duration="9703000" />
+      <workItem from="1554964165572" duration="586000" />
+      <workItem from="1554964788401" duration="2427000" />
+      <workItem from="1554969508107" duration="922000" />
+      <workItem from="1554972234588" duration="40000" />
+      <workItem from="1554972861979" duration="158000" />
+      <workItem from="1554973037846" duration="3769000" />
+      <workItem from="1555030206058" duration="4419000" />
+      <workItem from="1555035649716" duration="11808000" />
+      <workItem from="1555055637785" duration="7675000" />
+      <workItem from="1555288758033" duration="6087000" />
+      <workItem from="1555296580689" duration="44000" />
+      <workItem from="1555296631974" duration="374000" />
+      <workItem from="1555297023615" duration="8053000" />
+      <workItem from="1555311249054" duration="965000" />
+      <workItem from="1555315019307" duration="83000" />
+      <workItem from="1555315563124" duration="1169000" />
+      <workItem from="1555316796710" duration="107000" />
+      <workItem from="1555317015135" duration="2865000" />
+      <workItem from="1555375310135" duration="5000" />
+      <workItem from="1555376520206" duration="3363000" />
+      <workItem from="1555379909692" duration="2147000" />
+      <workItem from="1555384711026" duration="387000" />
+      <workItem from="1555385117022" duration="85000" />
+      <workItem from="1555396518056" duration="17000" />
+      <workItem from="1555400194891" duration="1470000" />
+      <workItem from="1555402701623" duration="1592000" />
+    </task>
+    <task id="LOCAL-00001" summary="项目初始化">
+      <created>1555052111622</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555052111622</updated>
+    </task>
+    <task id="LOCAL-00002" summary="项目第二次提交">
+      <created>1555380922458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555380922458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ButlerServerApplicationTest_test - 2019.04.09 at 14h 49m 34s.xml">
+      <configuration name="ButlerServerApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ButlerServerApplicationTest_test - 2019.04.09 at 14h 50m 44s.xml">
+      <configuration name="ButlerServerApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ButlerServerApplicationTest_test - 2019.04.09 at 15h 12m 37s.xml">
+      <configuration name="ButlerServerApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ButlerServerApplicationTest_test - 2019.04.12 at 16h 45m 35s.xml">
+      <configuration name="ButlerServerApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ButlerServerApplicationTest_test - 2019.04.12 at 16h 47m 12s.xml">
+      <configuration name="ButlerServerApplicationTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="132406000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.1977612" />
+      <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.18976545" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.49626866" visible="true" weight="0.25407165" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.28618065" />
+      <window_info anchor="bottom" id="Inspection Results" order="2" weight="0.3297062" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.3656148" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.3984799" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3297062" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.22306855" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50373137" side_tool="true" weight="0.267101" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32861805" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32861805" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.4243743" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.26066098" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="项目初始化" />
+    <MESSAGE value="项目第二次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目第二次提交" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="234" column="35" selection-start-line="234" selection-start-column="31" selection-end-line="234" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/MyProgram/jdk1.8/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="178" column="62" selection-start-line="178" selection-start-column="47" selection-end-line="178" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/common/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/constant/EsConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/constant/TimeConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/UserUtil.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/SpringContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/src/test/java/com/tuxiaoer/shanghai/ButlerServerApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/config/RedisJedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-995">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/redis/rediskey/KeyPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/ShiroRedisCache.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/ShiroRedisCacheManager.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/ShiroRedisSessionDao.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/MyUsernamePasswordToken.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/shiro/MyShiroRealm.java" />
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/keyutils/SysModules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="84" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/redis/JedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/constant/SysConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/redis/rediskey/BasePrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/RandomValidateCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="104" column="41" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/src/main/resources/mybatis-config.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/2.12.0/curator-client-2.12.0-sources.jar!/org/apache/curator/ConnectionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3906">
+          <caret line="224" column="86" selection-start-line="224" selection-start-column="86" selection-end-line="224" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-app/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/ButlerServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1513">
+          <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/MyProgram/jdk1.8/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="1073" column="19" selection-start-line="1073" selection-start-column="19" selection-end-line="1073" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="87" column="41" lean-forward="true" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/RoleDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/resources/mappings/modules/system/MenuDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/dao/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="58" column="35" selection-start-line="53" selection-start-column="4" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/boot/dubbo-spring-boot-starter/0.2.0/dubbo-spring-boot-starter-0.2.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-856" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>butler-admin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.16</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.42482916" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>
