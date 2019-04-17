@@ -30,9 +30,18 @@ dubbo:
     application:
         # 指定当前服务/应用的名称 （同样的服务名称需要相同）
         name: butler-admin-consumer
-        qos-port: 22224
+        qos-port: 22221
     # 注册中心暴露服务地址
     registry:
         address: zookeeper://192.168.56.101:2181
     consumer:
         timeout: 5000
+
+# shiro 配置
+shiro:
+    # shiro登录的session过期时间半小时.毫秒
+    session:
+        expireTime: 1800000
+    # shiro的cache有效期10分钟.毫秒
+    cache:
+        expireTime: 600000

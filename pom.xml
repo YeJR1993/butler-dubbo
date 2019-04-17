@@ -26,7 +26,6 @@
         <mybatis.version>2.0.0</mybatis.version>
         <druid.version>1.1.15</druid.version>
         <spring-boot-dubbo.version>0.2.0</spring-boot-dubbo.version>
-        <zookeeper.version>3.4.13</zookeeper.version>
         <lombok.version>1.18.6</lombok.version>
         <pagehelper.version>1.2.10</pagehelper.version>
         <fastjson.version>1.2.56</fastjson.version>

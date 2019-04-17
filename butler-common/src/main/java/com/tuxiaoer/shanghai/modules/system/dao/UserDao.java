@@ -22,6 +22,13 @@ public interface UserDao {
     User getUserById(User user);
 
     /**
+     * 通过用户名查询
+     * @param user
+     * @return
+     */
+    User getUserByName(User user);
+
+    /**
      * 查询用户列表
      * @param user
      * @return

@@ -78,7 +78,7 @@ dubbo:
     application:
         # 指定当前服务/应用的名称 （同样的服务名称需要相同）
         name: butler-server-provider
-        qos-port: 22222
+        qos-port: 22223
     # dubbo 协议 暴露服务端口 （默认是20880，修改端口，不同的服务提供者端口不能重复）
     protocol:
         name: dubbo

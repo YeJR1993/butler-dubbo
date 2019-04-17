@@ -18,6 +18,14 @@ public interface UserService {
      */
     User getUserByUserId(User user);
 
+
+    /**
+     * 通过用户名查询
+     * @param user
+     * @return
+     */
+    User getUserByName(User user);
+
     /**
      * （分页）查询用户列表
      * @param user

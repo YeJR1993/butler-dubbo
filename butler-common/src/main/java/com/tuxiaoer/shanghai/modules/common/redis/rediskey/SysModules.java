@@ -1,8 +1,7 @@
-package com.tuxiaoer.shanghai.modules.common.utils.keyutils;
+package com.tuxiaoer.shanghai.modules.common.redis.rediskey;
 
 
-import com.tuxiaoer.shanghai.modules.common.redis.rediskey.BasePrefix;
-import com.tuxiaoer.shanghai.modules.common.utils.constant.SysConstants;
+import com.tuxiaoer.shanghai.modules.common.constant.SysConstants;
 
 /**
  * @author YeJR

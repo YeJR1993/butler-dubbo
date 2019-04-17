@@ -68,4 +68,12 @@ public class User implements Serializable {
      */
     private List<Role> roles = new ArrayList<>();
 
+    /**
+     * 用户拥有的菜单
+     */
+    private List<Menu> menus = new ArrayList<>();
+
+    public User(String username) {
+        this.username = username;
+    }
 }

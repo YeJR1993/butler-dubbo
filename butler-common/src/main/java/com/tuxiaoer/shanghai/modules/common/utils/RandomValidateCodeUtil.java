@@ -1,5 +1,9 @@
 package com.tuxiaoer.shanghai.modules.common.utils;
 
+import com.tuxiaoer.shanghai.modules.common.redis.JedisUtils;
+import com.tuxiaoer.shanghai.modules.common.redis.rediskey.SysModules;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.session.Session;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -97,8 +101,8 @@ public class RandomValidateCodeUtil {
 			randomString = drowString(g, randomString, i);
 		}
 		// 将生成的随机字符串保存到redis中
-//		Session session = SecurityUtils.getSubject().getSession();
-//		JedisUtils.set(SysModules.validateCode, session.getId().toString(), randomString);
+		Session session = SecurityUtils.getSubject().getSession();
+		JedisUtils.set(SysModules.validateCode, session.getId().toString(), randomString);
 		
 		g.dispose();
 		try {
