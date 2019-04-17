@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="/treetable/css/jquery.treetable.css">
 <link rel="stylesheet" type="text/css" href="/treetable/css/jquery.treetable.theme.default.css">
 
-<script type="text/javascript" src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/validation/jquery.validate.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="/layer/layer.js"></script>

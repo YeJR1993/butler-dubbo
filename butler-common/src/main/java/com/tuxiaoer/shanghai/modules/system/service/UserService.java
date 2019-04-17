@@ -40,7 +40,7 @@ public interface UserService {
      * @param user
      * @return
      */
-    Integer saveUser(User user);
+    Integer insertUser(User user);
 
     /**
      * 更新用户

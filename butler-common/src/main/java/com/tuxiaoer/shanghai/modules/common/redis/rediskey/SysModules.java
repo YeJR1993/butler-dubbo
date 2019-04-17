@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.common.redis.rediskey;
 
 
-import com.tuxiaoer.shanghai.modules.common.constant.SysConstants;
+import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
 
 /**
  * @author YeJR
@@ -20,7 +20,7 @@ public class SysModules extends BasePrefix {
 	/**
 	 * 登录验证码
 	 */
-	public static SysModules validateCode = new SysModules(SysConstants.VALIDATECODE_EXPIRETIME, "validateCode");
+	public static SysModules validateCode = new SysModules(SystemConstants.VALIDATECODE_EXPIRETIME, "validateCode");
 	
 	
 }

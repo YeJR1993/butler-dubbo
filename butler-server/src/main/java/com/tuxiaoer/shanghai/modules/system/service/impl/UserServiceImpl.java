@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @author ：YeJR
  * @version : 1.0
  * @date ：2019/4/4 17:44
- * @description：系统用户相关实现类
+ * @description：系统用户服务
  */
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Integer saveUser(User user) {
+    public Integer insertUser(User user) {
         return userDao.insertUser(user);
     }
 

@@ -18,16 +18,16 @@
 						<div class="am-u-sm-12 am-u-md-6">
 							<div class="am-btn-toolbar">
 								<div class="am-btn-group am-btn-group-xs">
-									<@shiro.hasPermission name="sys:add:role">
-										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加角色', '/sys/role/form','690px', '330px')"><span class="am-icon-plus"></span> 添加</button>
+									<@shiro.hasPermission name="system:add:role">
+										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加角色', '/system/role/form','690px', '330px')"><span class="am-icon-plus"></span> 添加</button>
 									</@shiro.hasPermission>
-									<@shiro.hasPermission name="sys:delete:role">
-										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/sys/role/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
+									<@shiro.hasPermission name="system:delete:role">
+										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/system/role/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
 									</@shiro.hasPermission>
 								</div>
 							</div>
 						</div>
-						<form id="searchForm" action="/sys/role/list">
+						<form id="searchForm" action="/system/role/list">
 							<div class="am-u-sm-12 am-u-md-3">
 	                            <div class="am-form-group">
 	                                <select data-am-selected="{btnSize: 'sm'}" name="isAdmin">
@@ -79,17 +79,17 @@
 											<td>
 												<div class="am-btn-toolbar">
                                                     <div class="am-btn-group am-btn-group-xs">
-	                                                    <@shiro.hasPermission name="sys:view:role">
-	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看角色', '/sys/role/form?id=${role.id}','690px', '330px')"><span class="am-icon-copy"></span> 查看</button>
+	                                                    <@shiro.hasPermission name="system:view:role">
+	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看角色', '/system/role/form?id=${role.id}','690px', '330px')"><span class="am-icon-copy"></span> 查看</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:edit:role">
-															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑角色', '/sys/role/form?id=${role.id}','690px', '330px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+	                                                    <@shiro.hasPermission name="system:edit:role">
+															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑角色', '/system/role/form?id=${role.id}','690px', '330px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:allocation:role">
-															<button class="am-btn am-btn-default am-btn-xs am-text-thirdly"  onclick="openDialogSave('权限设置', '/sys/role/auth?id=${role.id}','350px', '700px')"><span class="am-icon-pencil-square-o"></span> 权限设置</button>
+	                                                    <@shiro.hasPermission name="system:allocation:role">
+															<button class="am-btn am-btn-default am-btn-xs am-text-thirdly"  onclick="openDialogSave('权限设置', '/system/role/auth?id=${role.id}','350px', '700px')"><span class="am-icon-pencil-square-o"></span> 权限设置</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:delete:role">
-			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除该角色吗？', '/sys/role/delete?id=${role.id}')"><span class="am-icon-trash-o"></span> 删除</button>
+	                                                    <@shiro.hasPermission name="system:delete:role">
+			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除该角色吗？', '/system/role/delete?id=${role.id}')"><span class="am-icon-trash-o"></span> 删除</button>
 	                                                    </@shiro.hasPermission>
 												    </div>
                                                 </div>

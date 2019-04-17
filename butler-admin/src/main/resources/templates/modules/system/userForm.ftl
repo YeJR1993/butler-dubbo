@@ -8,7 +8,7 @@
 	<body>
 		<div class="animated fadeIn">
 			<div class="am-u-sm-12 am-u-md-11 form-top">
-           		<form class="am-form am-form-horizontal" id="saveForm" action="/sys/user/save">
+           		<form class="am-form am-form-horizontal" id="saveForm" action="/system/user/save">
            			<div class="am-form-group" hidden="hidden">
                  		<label  class="am-u-sm-3 am-form-label">主键ID</label>
                   		<div class="am-u-sm-9">
@@ -107,6 +107,7 @@
 	        	//时间选择器
 				laydate.render({
 				    elem: '#startTime',
+					trigger: 'click',
 				    type: 'datetime',
 				    change: function(value, date, endDate){
 				        console.log(value); //得到日期生成的值，如：2017-08-18
@@ -122,6 +123,7 @@
 				//时间选择器
 				laydate.render({
 				    elem: '#endTime',
+					trigger: 'click',
 				    type: 'datetime',
 				    change: function(value, date, endDate){
 				        console.log(value); //得到日期生成的值，如：2017-08-18
@@ -158,7 +160,7 @@
 	                        usernameRule: true,
 	                        remote: {
 								type: "POST",
-								url: "/sys/user/verifyUsername",
+								url: "/system/user/verifyUsername",
 								cache:false,
 					            async:false,          
 								data: {

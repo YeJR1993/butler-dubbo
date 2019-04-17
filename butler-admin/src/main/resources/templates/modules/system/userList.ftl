@@ -18,21 +18,21 @@
 						<div class="am-u-sm-12 am-u-md-6">
 							<div class="am-btn-toolbar">
 								<div class="am-btn-group am-btn-group-xs">
-									<@shiro.hasPermission name="sys:add:user">
-										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加用户', '/sys/user/form','690px', '660px')"><span class="am-icon-plus"></span> 添加</button>
+									<@shiro.hasPermission name="system:add:user">
+										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加用户', '/system/user/form','690px', '660px')"><span class="am-icon-plus"></span> 添加</button>
 									</@shiro.hasPermission>
-									<@shiro.hasPermission name="sys:export:user">
-										<button type="button" class="am-btn am-btn-default am-btn-secondary"  onclick="exportData('确认导出？','/sys/user/export')"><span class="am-icon-save"></span> 导出</button>
+									<@shiro.hasPermission name="system:export:user">
+										<button type="button" class="am-btn am-btn-default am-btn-secondary"  onclick="exportData('确认导出？','/system/user/export')"><span class="am-icon-save"></span> 导出</button>
 									</@shiro.hasPermission>
-									<@shiro.hasPermission name="sys:delete:user">
-										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/sys/user/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
+									<@shiro.hasPermission name="system:delete:user">
+										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/system/user/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
 									</@shiro.hasPermission>
 								</div>
 							</div>
 						</div>
 						
 						<div class="am-u-sm-12 am-u-md-3">
-							<form id="searchForm" action="/sys/user/list">
+							<form id="searchForm" action="/system/user/list">
 								<input id="pageNo" name="pageNo" type="hidden" value="${page.pageNo}"/>
 								<input id="pageSize" name="pageSize" type="hidden" value="${page.pageSize}"/>
 								<div class="am-input-group am-input-group-sm">
@@ -66,14 +66,14 @@
 											<td>
 												<div class="am-btn-toolbar">
                                                     <div class="am-btn-group am-btn-group-xs">
-	                                                    <@shiro.hasPermission name="sys:view:user">
-	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看用户', '/sys/user/form?id=${user.id}','690px', '660px')"><span class="am-icon-copy"></span> 查看</button>
+	                                                    <@shiro.hasPermission name="system:view:user">
+	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看用户', '/system/user/form?id=${user.id}','690px', '660px')"><span class="am-icon-copy"></span> 查看</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:edit:user">
-															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑用户', '/sys/user/form?id=${user.id}','690px', '660px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+	                                                    <@shiro.hasPermission name="system:edit:user">
+															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑用户', '/system/user/form?id=${user.id}','690px', '660px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:delete:user">
-			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除该用户吗？', '/sys/user/delete?id=${user.id}')"><span class="am-icon-trash-o"></span> 删除</button>
+	                                                    <@shiro.hasPermission name="system:delete:user">
+			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除该用户吗？', '/system/user/delete?id=${user.id}')"><span class="am-icon-trash-o"></span> 删除</button>
 	                                                    </@shiro.hasPermission>
 												    </div>
                                                 </div>

@@ -8,7 +8,7 @@
 	<body>
 		<div class="animated fadeIn">
 			<div class="am-u-sm-12 am-u-md-11 form-top">
-           		<form class="am-form am-form-horizontal" id="saveForm" action="/sys/menu/save">
+           		<form class="am-form am-form-horizontal" id="saveForm" action="/system/menu/save">
            			<div class="am-form-group" hidden="hidden">
                  		<label  class="am-u-sm-3 am-form-label">主键ID</label>
                   		<div class="am-u-sm-9">
@@ -21,7 +21,7 @@
                 	<div class="am-form-group">
                  		<label  class="am-u-sm-3 am-form-label"><span class="required">*</span>上级菜单</label>
                   		<div class="am-u-sm-9">
-                  			<div onclick="menuSelect('选择上级菜单', '/sys/menu/menuSelect?id=${menu.id !''}','260px', '430px')">
+                  			<div onclick="menuSelect('选择上级菜单', '/system/menu/menuSelect?id=${menu.id !''}','260px', '430px')">
                   				<#if !menu.parent??>
                   					<input autocomplete="off" type="text" id="parentName" placeholder="点击选择"  value="功能菜单" required readonly="readonly" class="click">
                   					<input type="hidden" name="parentId" id="parentId" value="1">

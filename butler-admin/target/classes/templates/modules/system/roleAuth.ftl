@@ -7,7 +7,7 @@
 
 	<body class="bodyColor">
 		<ul id="menuTree" class="ztree"></ul>
-		<form class="am-form am-form-horizontal" id="saveForm" action="/sys/role/authSave">
+		<form class="am-form am-form-horizontal" id="saveForm" action="/system/role/authSave">
 			<input type="hidden" name="id" value="${role.id}">
 			<input type="hidden" name="menuIds" id="menuIds">
 		</form>

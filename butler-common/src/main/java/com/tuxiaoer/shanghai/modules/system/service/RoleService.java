@@ -41,7 +41,7 @@ public interface RoleService {
      * @param userId
      * @return
      */
-    List<Role> getUserAllRole(Integer userId);
+    List<Role> getUserAllRole(Long userId);
 
     /**
      * 保存角色

@@ -18,11 +18,11 @@
 						<div class="am-u-sm-12 am-u-md-6">
 							<div class="am-btn-toolbar">
 								<div class="am-btn-group am-btn-group-xs">
-									<@shiro.hasPermission name="sys:add:menu">
-										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加菜单', '/sys/menu/form','730px', '620px')"><span class="am-icon-plus"></span> 添加</button>
+									<@shiro.hasPermission name="system:add:menu">
+										<button type="button" class="am-btn am-btn-default am-btn-success" onclick="openDialogSave('添加菜单', '/system/menu/form','730px', '620px')"><span class="am-icon-plus"></span> 添加</button>
 									</@shiro.hasPermission>
-									<@shiro.hasPermission name="sys:delete:menu">
-										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/sys/menu/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
+									<@shiro.hasPermission name="system:delete:menu">
+										<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="deleteMultIterm('确认要删除吗？','/system/menu/deleteAll')"><span class="am-icon-trash-o"></span> 删除</button>
 									</@shiro.hasPermission>
 								</div>
 							</div>
@@ -54,17 +54,17 @@
 											<td>
 												<div class="am-btn-toolbar">
                                                     <div class="am-btn-group am-btn-group-xs">
-	                                                    <@shiro.hasPermission name="sys:view:menu">
-	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看菜单', '/sys/menu/form?id=${menu.id}','730px', '620px')"><span class="am-icon-copy"></span> 查看</button>
+	                                                    <@shiro.hasPermission name="system:view:menu">
+	                                                    	<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="openDialogView('查看菜单', '/system/menu/form?id=${menu.id}','730px', '620px')"><span class="am-icon-copy"></span> 查看</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:edit:menu">
-															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑菜单', '/sys/menu/form?id=${menu.id}','730px', '620px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+	                                                    <@shiro.hasPermission name="system:edit:menu">
+															<button class="am-btn am-btn-default am-btn-xs am-text-secondary"  onclick="openDialogSave('编辑菜单', '/system/menu/form?id=${menu.id}','730px', '620px')"><span class="am-icon-pencil-square-o"></span> 编辑</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:add:menu">
-															<button class="am-btn am-btn-default am-btn-xs am-text-thirdly"  onclick="openDialogSave('添加下级菜单', '/sys/menu/form?parentId=${menu.id}','730px', '620px')"><span class="am-icon-plus"></span> 添加下级菜单</button>
+	                                                    <@shiro.hasPermission name="system:add:menu">
+															<button class="am-btn am-btn-default am-btn-xs am-text-thirdly"  onclick="openDialogSave('添加下级菜单', '/system/menu/form?parentId=${menu.id}','730px', '620px')"><span class="am-icon-plus"></span> 添加下级菜单</button>
 	                                                    </@shiro.hasPermission>
-	                                                    <@shiro.hasPermission name="sys:delete:menu">
-			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除吗？', '/sys/menu/delete?id=${menu.id}')"><span class="am-icon-trash-o"></span> 删除</button>
+	                                                    <@shiro.hasPermission name="system:delete:menu">
+			                                            	<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="deleteItem('确认要删除吗？', '/system/menu/delete?id=${menu.id}')"><span class="am-icon-trash-o"></span> 删除</button>
 	                                                    </@shiro.hasPermission>
 												    </div>
                                                 </div>

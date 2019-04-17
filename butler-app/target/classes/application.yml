@@ -7,7 +7,7 @@ dubbo:
     application:
         # 指定当前服务/应用的名称 （同样的服务名称需要相同）
         name: butler-app-consumer
-        qos-port: 22223
+        qos-port: 22222
     # 注册中心暴露服务地址
     registry:
         address: zookeeper://192.168.56.101:2181

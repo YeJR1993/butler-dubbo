@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="/webuploader/css/uploader.css">
 
 
-<script type="text/javascript" src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/webuploader/js/webuploader.js"></script>
 <script type="text/javascript" src="/webuploader/js/upload.js"></script>
 <script type="text/javascript" src="/common/js/common.js"></script> 

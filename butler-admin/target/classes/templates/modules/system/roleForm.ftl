@@ -8,7 +8,7 @@
 	<body>
 		<div class="animated fadeIn">
 			<div class="am-u-sm-12 am-u-md-11 form-top">
-           		<form class="am-form am-form-horizontal" id="saveForm" action="/sys/role/save">
+           		<form class="am-form am-form-horizontal" id="saveForm" action="/system/role/save">
            			<div class="am-form-group" hidden="hidden">
                  		<label  class="am-u-sm-3 am-form-label">主键ID</label>
                   		<div class="am-u-sm-9">
@@ -69,7 +69,7 @@
 	                        rangelength:[3,20],
 	                        remote: {
 								type: "POST",
-								url: "/sys/role/verifyRoleName",
+								url: "/system/role/verifyRoleName",
 								cache:false,
 					            async:false,          
 								data: {

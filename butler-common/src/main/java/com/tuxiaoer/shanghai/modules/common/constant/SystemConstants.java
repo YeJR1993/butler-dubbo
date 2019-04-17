@@ -6,7 +6,7 @@ package com.tuxiaoer.shanghai.modules.common.constant;
  * 系统常量管理类
  *
  */
-public class SysConstants {
+public class SystemConstants {
 	
 	/**
 	 * shiro密码校验算法：MD5
@@ -33,7 +33,17 @@ public class SysConstants {
 	 * 操作失败
 	 */
 	public static final String  OPERATE_FAILED_PAGE_TIP = "操作失败！";
-	
+
+	/**
+	 * 页码
+	 */
+	public static final String  PAGE_NUM = "pageNum";
+
+	/**
+	 * 每页条数
+	 */
+	public static final String  PAGE_SIZE = "pageSize";
+
 	
 	
 }

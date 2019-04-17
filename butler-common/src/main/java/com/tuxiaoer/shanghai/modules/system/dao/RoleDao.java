@@ -2,6 +2,7 @@ package com.tuxiaoer.shanghai.modules.system.dao;
 
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -23,10 +24,10 @@ public interface RoleDao {
 
     /**
      * 通过roleName获取角色信息
-     * @param role
+     * @param roleName
      * @return
      */
-    Role getRoleByName(Role role);
+    Role getRoleByName(@Param("roleName") String roleName);
 
     /**
      * 查询角色列表
@@ -40,7 +41,7 @@ public interface RoleDao {
      * @param userId
      * @return
      */
-    List<Role> getUserAllRole(Integer userId);
+    List<Role> getUserAllRole(@Param("userId") Long userId);
 
     /**
      * 保存角色

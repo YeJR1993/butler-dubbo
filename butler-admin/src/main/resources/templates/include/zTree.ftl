@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="/common/css/common.css">
 <link rel="stylesheet" type="text/css" href="/ztree/css/bootstrapStyle/bootstrapStyle.css">
 
-<script type="text/javascript" src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/ztree/js/jquery.ztree.core.min.js"></script>
 <script type="text/javascript" src="/ztree/js/jquery.ztree.excheck.min.js"></script>
 <script type="text/javascript" src="/ztree/js/jquery.ztree.exedit.min.js"></script>

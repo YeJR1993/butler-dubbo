@@ -3,7 +3,7 @@ package com.tuxiaoer.shanghai.common.config;
 import com.tuxiaoer.shanghai.common.shiro.MyShiroRealm;
 import com.tuxiaoer.shanghai.common.shiro.ShiroRedisCacheManager;
 import com.tuxiaoer.shanghai.common.shiro.ShiroRedisSessionDao;
-import com.tuxiaoer.shanghai.modules.common.constant.SysConstants;
+import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;
@@ -78,9 +78,9 @@ public class ShiroConfig {
 
 		HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
 		// 指定shiro密码比较的加密算法
-		credentialsMatcher.setHashAlgorithmName(SysConstants.SHIRO_CREDENTIALSMATCHER);
+		credentialsMatcher.setHashAlgorithmName(SystemConstants.SHIRO_CREDENTIALSMATCHER);
 		// 指定加密次数
-		credentialsMatcher.setHashIterations(SysConstants.SHIRO_ENCRYPTION_NUMBER);
+		credentialsMatcher.setHashIterations(SystemConstants.SHIRO_ENCRYPTION_NUMBER);
 
 		myShiroRealm.setCredentialsMatcher(credentialsMatcher);
 

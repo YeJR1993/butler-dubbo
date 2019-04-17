@@ -50,7 +50,7 @@ public class UserController {
      */
     @PostMapping
     public Integer saveUser(@RequestBody User user) {
-        return userService.saveUser(user);
+        return userService.insertUser(user);
     }
 
     /**

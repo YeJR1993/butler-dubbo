@@ -5,22 +5,27 @@ import com.tuxiaoer.shanghai.common.shiro.LoginToken;
 import com.tuxiaoer.shanghai.modules.common.exception.LoginException;
 import com.tuxiaoer.shanghai.modules.common.utils.CodeMsg;
 import com.tuxiaoer.shanghai.modules.common.utils.RandomValidateCodeUtil;
+import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
+import com.tuxiaoer.shanghai.modules.system.service.MenuService;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * @author ：YeJR
@@ -35,6 +40,9 @@ public class LoginController {
 
     @Reference
     private UserService userService;
+
+    @Reference
+    private MenuService menuService;
 
     /**
      * 登入页
@@ -73,6 +81,14 @@ public class LoginController {
         }
     }
 
+    /**
+     * 登入 授权，具体的逻辑交由shiro完成
+     * @param username
+     * @param password
+     * @param rememberMe
+     * @param validateCode
+     * @return
+     */
     @RequestMapping(value = "/authorize")
     public String login(String username, String password, @RequestParam(defaultValue = "false") Boolean rememberMe, String validateCode) {
 
@@ -88,6 +104,10 @@ public class LoginController {
         }
 
         User user = userService.getUserByName(new User(username));
+        if (user != null) {
+            List<Menu> menus = menuService.getMenuByUserId(user.getId(), null, user.isAdmin());
+            user.setMenus(menus);
+        }
 
         LoginToken token = new LoginToken(username, password, rememberMe, validateCode, user);
 
@@ -107,5 +127,45 @@ public class LoginController {
         return "redirect:/index";
     }
 
+    /**
+     * 首页
+     * @return
+     */
+    @RequestMapping(value = "/index")
+    public String index() {
+        Subject subject = SecurityUtils.getSubject();
+        User user = (User) subject.getPrincipal();
+        Session session = subject.getSession();
+        session.setAttribute("loginName", user.getUsername());
+        return "modules/index";
+    }
+
+    /**
+     * 权限不足
+     * @return
+     */
+    @RequestMapping(value = "/403")
+    public String unAuthorize() {
+        return "error/403";
+    }
+
+    /**
+     * 检查Excel导出是否结束
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/exportExcelFinished")
+    public Boolean exportExcelFinished() {
+        Session session = SecurityUtils.getSubject().getSession();
+        Object falg =  session.getAttribute("exportExcel");
+        if (falg != null) {
+            if ((boolean) falg) {
+                // 删除该session， 不然对下次导出造成影响
+                session.removeAttribute("exportExcel");
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

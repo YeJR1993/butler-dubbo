@@ -30,7 +30,9 @@
         <pagehelper.version>1.2.10</pagehelper.version>
         <fastjson.version>1.2.56</fastjson.version>
         <shiro.version>1.4.0</shiro.version>
+        <shiro-freemarker.version>1.0.0</shiro-freemarker.version>
         <jasypt.version>2.1.1</jasypt.version>
+        <poi.version>4.1.0</poi.version>
         <butler-common.version>1.0-SNAPSHOT</butler-common.version>
     </properties>
 
@@ -111,6 +113,24 @@
                 <version>${jasypt.version}</version>
             </dependency>
 
+            <!-- Freemark页面中使用Shiro标签 -->
+            <dependency>
+                <groupId>net.mingsoft</groupId>
+                <artifactId>shiro-freemarker-tags</artifactId>
+                <version>${shiro-freemarker.version}</version>
+            </dependency>
+
+            <!-- POI Excel导入导出 -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
