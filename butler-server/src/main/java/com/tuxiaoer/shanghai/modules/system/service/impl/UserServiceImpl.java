@@ -9,6 +9,8 @@ import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author ：YeJR
  * @version : 1.0
@@ -30,6 +32,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserByName(User user) {
         return userDao.getUserByName(user);
+    }
+
+    @Override
+    public List<User> getUserList(User user) {
+        return userDao.getUserList(user);
     }
 
     @Override

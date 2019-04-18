@@ -3,6 +3,8 @@ package com.tuxiaoer.shanghai.modules.system.service;
 import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 
+import java.util.List;
+
 /**
  * @author ：YeJR
  * @version : 1.0
@@ -25,6 +27,13 @@ public interface UserService {
      * @return
      */
     User getUserByName(User user);
+
+    /**
+     * 查询用户列表
+     * @param user
+     * @return
+     */
+    List<User> getUserList(User user);
 
     /**
      * （分页）查询用户列表

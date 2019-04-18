@@ -83,6 +83,7 @@ dubbo:
     protocol:
         name: dubbo
         port: 20880
+        payload: 20971520
     # 注册中心暴露服务地址
     registry:
         address: zookeeper://192.168.56.101:2181
