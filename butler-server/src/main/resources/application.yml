@@ -86,8 +86,9 @@ dubbo:
     # 注册中心暴露服务地址
     registry:
         address: zookeeper://192.168.56.101:2181
+        timeout: 300000
     provider:
-        timeout: 1000
+        timeout: 300000
 
 # pagehelper 分页插件配置
 pagehelper:

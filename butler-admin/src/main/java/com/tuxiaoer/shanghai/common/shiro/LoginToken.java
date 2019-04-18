@@ -1,7 +1,6 @@
 package com.tuxiaoer.shanghai.common.shiro;
 
 import com.tuxiaoer.shanghai.modules.system.entity.User;
-import lombok.Data;
 import org.apache.shiro.authc.UsernamePasswordToken;
 
 /**
@@ -10,7 +9,6 @@ import org.apache.shiro.authc.UsernamePasswordToken;
  * 重新shiro的UsernamePasswordToken，为其新增验证码属性
  *
  */
-@Data
 public class LoginToken extends UsernamePasswordToken{
 
 	/**
@@ -30,5 +28,19 @@ public class LoginToken extends UsernamePasswordToken{
 		this.user = user;
 	}
 
+	public String getValidateCode() {
+		return validateCode;
+	}
 
+	public void setValidateCode(String validateCode) {
+		this.validateCode = validateCode;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 }
