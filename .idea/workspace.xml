@@ -4,36 +4,25 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73caa398-db0e-424f-89e3-32e4c8bcf332" name="Default Changelist" comment="导出（暂不可用）代码添加">
+    <list default="true" id="73caa398-db0e-424f-89e3-32e4c8bcf332" name="Default Changelist" comment="除了Excel导出 admin管理后台整合完毕">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/BaseErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/common/excel/ExportExcel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/common/excel/ExportExcel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/BaseErrorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/MenuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/RoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/UploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/UserUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/excel/ExcelField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/excel/Reflections.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/utils/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/utils/UserUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-admin/target/classes/com/tuxiaoer/shanghai/modules/system/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-app/src/main/java/com/tuxiaoer/shanghai/modules/system/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/utils/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/common/utils/CodeMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/MenuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-common/target/classes/com/tuxiaoer/shanghai/modules/system/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/src/main/java/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/MenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/RoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/butler-server/target/classes/com/tuxiaoer/shanghai/modules/system/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1595">
+            <state relative-caret-position="1722">
               <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="210">
               <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
             </state>
           </provider>
@@ -127,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
+            <state relative-caret-position="2730">
               <caret line="130" column="30" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1510">
+            <state relative-caret-position="3465">
               <caret line="165" column="42" selection-start-line="165" selection-start-column="42" selection-end-line="165" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="392">
+              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/butler-admin/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="1071">
               <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
             </state>
           </provider>
@@ -324,6 +313,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -515,97 +506,6 @@
             <path>
               <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
-              <item name="butler-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tuxiaoer" type="462c0819:PsiDirectoryNode" />
-              <item name="shanghai" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="butler-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="butler-dubbo" type="462c0819:PsiDirectoryNode" />
               <item name="butler-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -725,8 +625,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -855,8 +753,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ButlerAdminApplication" />
         <item itemvalue="Spring Boot.ButlerServerApplication" />
+        <item itemvalue="Spring Boot.ButlerAdminApplication" />
         <item itemvalue="JUnit.ButlerServerApplicationTest.test" />
       </list>
     </recent_temporary>
@@ -943,7 +841,8 @@
       <workItem from="1555462935593" duration="22125000" />
       <workItem from="1555492212851" duration="2286000" />
       <workItem from="1555558865043" duration="2449000" />
-      <workItem from="1555568640877" duration="8314000" />
+      <workItem from="1555568640877" duration="8734000" />
+      <workItem from="1555577386861" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1555052111622</created>
@@ -980,7 +879,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555559226076</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="除了Excel导出 admin管理后台整合完毕">
+      <created>1555577185952</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555577185952</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1001,7 +907,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173933000" />
+    <option name="totallyTimeSpent" value="174377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,7 +922,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.24520256" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.3065032" />
       <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.18976545" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1024,12 +930,12 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.49573562" visible="true" weight="0.35038084" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.49573562" visible="true" weight="0.26441786" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.28618065" />
       <window_info anchor="bottom" id="Inspection Results" order="2" weight="0.3297062" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.24591948" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.38084874" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3984799" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -1048,7 +954,7 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven" order="7" visible="true" weight="0.26012793" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.26012793" />
       <window_info anchor="right" id="SciView" order="8" />
       <window_info anchor="right" id="Database" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
@@ -1114,7 +1020,8 @@
     <MESSAGE value="Excel 导出修改样式" />
     <MESSAGE value="timeout 配置修改为5分钟" />
     <MESSAGE value="导出（暂不可用）代码添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="导出（暂不可用）代码添加" />
+    <MESSAGE value="除了Excel导出 admin管理后台整合完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="除了Excel导出 admin管理后台整合完毕" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1431,47 +1338,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/BaseErrorController.java">
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="130" column="30" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="30" />
+        <state relative-caret-position="1722">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UploadController.java">
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1510">
-          <caret line="165" column="42" selection-start-line="165" selection-start-column="42" selection-end-line="165" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="987">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1492,27 +1379,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/Role.java">
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/system/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1595">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        <state relative-caret-position="2730">
+          <caret line="130" column="30" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/butler-common/src/main/java/com/tuxiaoer/shanghai/modules/common/utils/Result.java">
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/BaseErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="315">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3465">
+          <caret line="165" column="42" selection-start-line="165" selection-start-column="42" selection-end-line="165" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/butler-admin/src/main/java/com/tuxiaoer/shanghai/modules/system/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
