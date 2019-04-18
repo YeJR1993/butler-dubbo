@@ -3,6 +3,7 @@ package com.tuxiaoer.shanghai.modules.system.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.dao.RoleDao;
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import com.tuxiaoer.shanghai.modules.system.service.RoleService;
@@ -27,69 +28,88 @@ public class RoleServiceImpl implements RoleService {
     private RoleDao roleDao;
 
     @Override
-    public Role getRoleByRoleId(Role role) {
-        return roleDao.getRoleById(role);
+    public Result<Role> getRoleByRoleId(Role role) {
+        return Result.success(roleDao.getRoleById(role));
     }
 
     @Override
-    public PageInfo<Role> getRoleListByPage(Role role, Integer pageNum, Integer pageSize) {
+    public Result<PageInfo<Role>> getRoleListByPage(Role role, Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum, pageSize);
-        return new PageInfo<>(roleDao.getRoleList(role));
+        PageInfo<Role> pageInfo = new PageInfo<>(roleDao.getRoleList(role));
+        return Result.success(pageInfo);
     }
 
     @Override
-    public List<Role> getAllRoleList(Role role) {
-        return roleDao.getRoleList(role);
+    public Result<List<Role>> getAllRoleList(Role role) {
+        List<Role> roleList = roleDao.getRoleList(role);
+        return Result.success(roleList);
     }
 
     @Override
-    public List<Role> getUserAllRole(Long userId) {
+    public Result<List<Role>> getUserAllRole(Long userId) {
         List<Role> list = new ArrayList<>();
         if (userId != null) {
             list = roleDao.getUserAllRole(userId);
         }
-        return list;
+        return Result.success(list);
     }
 
     @Override
-    public Integer insertRole(Role role) {
-        return roleDao.insertRole(role);
+    public Result<Role> insertRole(Role role) {
+        roleDao.insertRole(role);
+        return Result.success(role);
     }
 
     @Override
-    public Integer upRoleById(Role role) {
-        return roleDao.upRoleById(role);
+    public Result<Boolean> upRoleById(Role role) {
+        roleDao.upRoleById(role);
+        return Result.success(true);
     }
 
     @Override
-    public Integer delRoleByRoleId(Role role) {
-        Integer result = roleDao.delRoleById(role);
+    public Result<Boolean> delRoleByRoleId(Role role) {
+        // 删除当前角色
+        roleDao.delRoleById(role);
+        // 删除角色菜单关系
         roleDao.delRoleMenuById(role);
+        // 删除角色用户关系
         roleDao.delRoleUserById(role);
-        return result;
+        return Result.success(true);
     }
 
     @Override
-    public Boolean verifyRoleName(String roleName, String oldRoleName) {
+    public Result<Boolean> delRolesByIds(Long[] ids) {
+        if (ids != null) {
+            for (Long id : ids) {
+                delRoleByRoleId(new Role(id));
+            }
+        }
+        return Result.success(true);
+    }
+
+    @Override
+    public Result<Boolean> verifyRoleName(String roleName, String oldRoleName) {
+        Boolean result = false;
         if (StringUtils.isNotBlank(roleName)) {
             if (roleName.equals(oldRoleName)) {
-                return true;
+                result = true;
             }
             Role role = roleDao.getRoleByName(roleName);
             if (role == null) {
-                return true;
+                result = true;
             }
         }
-        return false;
+        return Result.success(result);
     }
 
     @Override
-    public void authSave(Role role) {
+    public Result<Boolean> authSave(Role role) {
         // 先删除角色原有的对应的菜单
         roleDao.delRoleMenuById(role);
         //接着插入新的对应关系
         if (role.getMenus() != null && role.getMenus().size() > 0) {
             roleDao.insertRoleMenu(role);
         }
+        return Result.success(true);
     }
 }

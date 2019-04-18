@@ -1,6 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.service;
 
 import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public interface UserService {
      * @param user
      * @return
      */
-    User getUserByUserId(User user);
+    Result<User> getUserByUserId(User user);
 
 
     /**
@@ -26,14 +27,14 @@ public interface UserService {
      * @param user
      * @return
      */
-    User getUserByName(User user);
+    Result<User> getUserByName(User user);
 
     /**
      * 查询用户列表
      * @param user
      * @return
      */
-    List<User> getUserList(User user);
+    Result<List<User>> getUserList(User user);
 
     /**
      * （分页）查询用户列表
@@ -42,41 +43,40 @@ public interface UserService {
      * @param pageSize
      * @return
      */
-    PageInfo<User> getUserListByPage(User user, Integer pageNum, Integer pageSize);
+    Result<PageInfo<User>> getUserListByPage(User user, Integer pageNum, Integer pageSize);
 
     /**
      * 保存用户
      * @param user
      * @return
      */
-    Integer insertUser(User user);
+    Result<User> insertUser(User user);
 
     /**
      * 更新用户
      * @param user
      * @return
      */
-    Integer upUserByUserId(User user);
+    Result<Boolean> upUserByUserId(User user);
 
     /**
      * 删除用户
      * @param user
      * @return
      */
-    Integer delUserByUserId(User user);
+    Result<Boolean> delUserByUserId(User user);
 
     /**
-     * 删除该用户的角色关系
-     * @param user
-     * @return
+     * 批量删除
+     * @param ids
      */
-    Integer delUserRoleByUserId(User user);
+    Result<Boolean> delUsersByIds(Long[] ids);
 
     /**
-     * 保存用户角色关系
-     * @param user
+     * 校验用户名是否重复
+     * @param username
+     * @param oldUsername
      * @return
      */
-    Integer insertUserRole(User user);
-
+    Result<Boolean> verifyUsername(String username, String oldUsername);
 }

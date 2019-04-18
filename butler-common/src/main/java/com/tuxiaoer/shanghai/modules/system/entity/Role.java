@@ -50,9 +50,11 @@ public class Role implements Serializable{
 	 * checkbox状态，专门为用户FORM页面显示角色时，设置的字段
 	 */
 	private String checkbox;
-	
-	public Role() {
-		super();
+
+	public Role() {}
+
+	public Role(Long id) {
+		this.id = id;
 	}
 
 	/**

@@ -5,6 +5,7 @@ import com.tuxiaoer.shanghai.common.shiro.LoginToken;
 import com.tuxiaoer.shanghai.modules.common.exception.LoginException;
 import com.tuxiaoer.shanghai.modules.common.utils.CodeMsg;
 import com.tuxiaoer.shanghai.modules.common.utils.RandomValidateCodeUtil;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;
@@ -46,6 +47,7 @@ public class LoginController {
 
     /**
      * 登入页
+     *
      * @return
      */
     @RequestMapping(value = "/login")
@@ -61,6 +63,7 @@ public class LoginController {
 
     /**
      * 生成验证码
+     *
      * @param request
      * @param response
      */
@@ -83,6 +86,7 @@ public class LoginController {
 
     /**
      * 登入 授权，具体的逻辑交由shiro完成
+     *
      * @param username
      * @param password
      * @param rememberMe
@@ -102,10 +106,11 @@ public class LoginController {
         if (username == null || password == null) {
             return "redirect:/login";
         }
-
-        User user = userService.getUserByName(new User(username));
+        Result<User> userResult = userService.getUserByName(new User(username));
+        User user = userResult.getData();
         if (user != null) {
-            List<Menu> menus = menuService.getMenuByUserId(user.getId(), null, user.isAdmin());
+            Result<List<Menu>> menuResult = menuService.getMenuByUserId(user.getId(), null, user.isAdmin());
+            List<Menu> menus = menuResult.getData();
             user.setMenus(menus);
         }
 
@@ -129,6 +134,7 @@ public class LoginController {
 
     /**
      * 首页
+     *
      * @return
      */
     @RequestMapping(value = "/index")
@@ -142,6 +148,7 @@ public class LoginController {
 
     /**
      * 权限不足
+     *
      * @return
      */
     @RequestMapping(value = "/403")
@@ -151,13 +158,14 @@ public class LoginController {
 
     /**
      * 检查Excel导出是否结束
+     *
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "/exportExcelFinished")
     public Boolean exportExcelFinished() {
         Session session = SecurityUtils.getSubject().getSession();
-        Object falg =  session.getAttribute("exportExcel");
+        Object falg = session.getAttribute("exportExcel");
         if (falg != null) {
             if ((boolean) falg) {
                 // 删除该session， 不然对下次导出造成影响

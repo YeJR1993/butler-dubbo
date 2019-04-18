@@ -1,6 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.service;
 
 import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public interface RoleService {
      * @param role
      * @return
      */
-    Role getRoleByRoleId(Role role);
+    Result<Role> getRoleByRoleId(Role role);
 
     /**
      * 分页查询角色列表
@@ -27,42 +28,49 @@ public interface RoleService {
      * @param pageSize
      * @return
      */
-    PageInfo<Role> getRoleListByPage(Role role, Integer pageNum, Integer pageSize);
+    Result<PageInfo<Role>> getRoleListByPage(Role role, Integer pageNum, Integer pageSize);
 
     /**
      * 查询所有角色
      * @param role
      * @return
      */
-    List<Role> getAllRoleList(Role role);
+    Result<List<Role>> getAllRoleList(Role role);
 
     /**
      * 查询用户的所有角色
      * @param userId
      * @return
      */
-    List<Role> getUserAllRole(Long userId);
+    Result<List<Role>> getUserAllRole(Long userId);
 
     /**
      * 保存角色
      * @param role
      * @return
      */
-    Integer insertRole(Role role);
+    Result<Role> insertRole(Role role);
 
     /**
      * 更新角色信息
      * @param role
      * @return
      */
-    Integer upRoleById(Role role);
+    Result<Boolean> upRoleById(Role role);
 
     /**
      * 根据角色Id删除角色
      * @param role
      * @return
      */
-    Integer delRoleByRoleId(Role role);
+    Result<Boolean> delRoleByRoleId(Role role);
+
+    /**
+     * 批量删除角色
+     * @param ids
+     * @return
+     */
+    Result<Boolean> delRolesByIds(Long[] ids);
 
     /**
      * 校验角色名是否重复
@@ -70,12 +78,12 @@ public interface RoleService {
      * @param oldRoleName
      * @return
      */
-    Boolean verifyRoleName(String roleName, String oldRoleName);
+    Result<Boolean> verifyRoleName(String roleName, String oldRoleName);
 
     /**
      * 更新角色菜单关系
      * @param role
      */
-    void authSave(Role role);
+    Result<Boolean> authSave(Role role);
 
 }

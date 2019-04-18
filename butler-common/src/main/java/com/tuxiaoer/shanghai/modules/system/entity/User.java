@@ -80,6 +80,12 @@ public class User implements Serializable {
      */
     private List<Menu> menus = new ArrayList<>();
 
+    public User() {}
+
+    public User(Long id) {
+        this.id = id;
+    }
+
     public User(String username) {
         this.username = username;
     }
@@ -92,4 +98,5 @@ public class User implements Serializable {
         }
         return false;
     }
+
 }

@@ -46,3 +46,7 @@ shiro:
     # shiro的cache有效期10分钟.毫秒
     cache:
         expireTime: 600000
+
+# 上传文件保存目录
+upload:
+    filePath: d:/opt/upload/

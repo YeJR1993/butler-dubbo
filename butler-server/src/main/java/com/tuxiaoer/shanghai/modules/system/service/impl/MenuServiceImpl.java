@@ -1,6 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.dao.MenuDao;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;
@@ -24,21 +25,22 @@ public class MenuServiceImpl implements MenuService {
     private MenuDao menuDao;
 
     @Override
-    public Menu getMenuById(Menu menu) {
-        return menuDao.getMenuById(menu);
+    public Result<Menu> getMenuById(Menu menu) {
+        menu = menuDao.getMenuById(menu);
+        return Result.success(menu);
     }
 
     @Override
-    public List<Menu> getMenuList(Menu menu) {
+    public Result<List<Menu>> getMenuList(Menu menu) {
         // 查询并进行排序
-        List<Menu> list = new ArrayList<Menu>();
+        List<Menu> list = new ArrayList<>();
         List<Menu> sourceList = menuDao.getMenuList(menu);
         Menu.sortList(list, sourceList, 1L);
-        return list;
+        return Result.success(list);
     }
 
     @Override
-    public List<Menu> getMenuByUserId(Long userId, Integer isShow, Boolean isAdmin) {
+    public Result<List<Menu>> getMenuByUserId(Long userId, Integer isShow, Boolean isAdmin) {
         List<Menu> menus;
         if (isAdmin) {
             Menu menu = new Menu();
@@ -49,21 +51,23 @@ public class MenuServiceImpl implements MenuService {
         }
         List<Menu> list = new ArrayList<>();
         Menu.sortList(list, menus, 1L);
-        return list;
+        return Result.success(list);
     }
 
     @Override
-    public Integer insertMenu(Menu menu) {
-        return menuDao.insertMenu(menu);
+    public Result<Menu> insertMenu(Menu menu) {
+        menuDao.insertMenu(menu);
+        return Result.success(menu);
     }
 
     @Override
-    public Integer upMenuById(Menu menu) {
-        return menuDao.upMenuById(menu);
+    public Result<Boolean> upMenuById(Menu menu) {
+        menuDao.upMenuById(menu);
+        return Result.success(true);
     }
 
     @Override
-    public Integer delMenuById(Menu menu) {
+    public Result<Boolean> delMenuById(Menu menu) {
         // 因为需要删除该菜单下的所有子菜单以及子子菜单等等，先查询
         menu = menuDao.getMenuById(menu);
         // 递归删除子菜单、子子菜单等等
@@ -73,6 +77,16 @@ public class MenuServiceImpl implements MenuService {
             }
         }
         menuDao.delMenuById(menu);
-        return 1;
+        return Result.success(true);
+    }
+
+    @Override
+    public Result<Boolean> delMenusByIds(Long[] ids) {
+        if (ids != null) {
+            for (Long id : ids) {
+                delMenuById(new Menu(id));
+            }
+        }
+        return Result.success(true);
     }
 }

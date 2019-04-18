@@ -70,6 +70,12 @@ public class Menu implements Serializable{
 	 */
 	private List<Menu> children = new ArrayList<>();
 
+	public Menu() {}
+
+	public Menu(Long id) {
+		this.id = id;
+	}
+
 	/**
 	 * 将从数据库获取到的Menu集合按照上下级和排序关系进行重排
 	 * @param list

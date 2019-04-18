@@ -2,6 +2,7 @@ package com.tuxiaoer.shanghai.modules.system.web;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.modules.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -27,9 +28,9 @@ public class UserController {
      * @return
      */
     @GetMapping
-    public PageInfo<User> getUserListByPage(User user,
-                                         @RequestParam(defaultValue = "1") Integer pageNum,
-                                         @RequestParam(defaultValue = "10") Integer pageSize) {
+    public Result<PageInfo<User>> getUserListByPage(User user,
+                                                    @RequestParam(defaultValue = "1") Integer pageNum,
+                                                    @RequestParam(defaultValue = "10") Integer pageSize) {
         return userService.getUserListByPage(user, pageNum, pageSize);
     }
 
@@ -39,7 +40,7 @@ public class UserController {
      * @return
      */
     @GetMapping(value = "/{id}")
-    public User getUserById (User user) {
+    public Result<User> getUserById (User user) {
         return userService.getUserByUserId(user);
     }
 
@@ -49,7 +50,7 @@ public class UserController {
      * @return
      */
     @PostMapping
-    public Integer saveUser(@RequestBody User user) {
+    public Result<User> saveUser(@RequestBody User user) {
         return userService.insertUser(user);
     }
 
@@ -59,7 +60,7 @@ public class UserController {
      * @return
      */
     @PutMapping
-    public Integer updateUser(@RequestBody User user) {
+    public Result<Boolean> updateUser(@RequestBody User user) {
         return  userService.upUserByUserId(user);
     }
 
@@ -69,7 +70,7 @@ public class UserController {
      * @return
      */
     @DeleteMapping(value = "/{id}")
-    public Integer deleteUser(User user) {
+    public Result<Boolean> deleteUser(User user) {
         return userService.delUserByUserId(user);
     }
 
