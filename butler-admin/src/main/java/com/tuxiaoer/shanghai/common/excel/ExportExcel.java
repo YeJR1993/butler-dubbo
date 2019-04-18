@@ -1,13 +1,14 @@
 package com.tuxiaoer.shanghai.common.excel;
 
-import com.tuxiaoer.shanghai.modules.common.excel.Reflections;
 import com.tuxiaoer.shanghai.modules.common.excel.ExcelField;
+import com.tuxiaoer.shanghai.modules.common.excel.Reflections;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.streaming.SXSSFRow;
 import org.apache.poi.xssf.streaming.SXSSFSheet;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
 import org.apache.shiro.SecurityUtils;
@@ -49,7 +50,7 @@ public class ExportExcel {
 	/**
 	 * 样式列表
 	 */
-	private Map<String, CellStyle> styles;
+	private Map<String, XSSFCellStyle> styles;
 
 	/**
 	 * 当前行号
@@ -211,12 +212,12 @@ public class ExportExcel {
 	 * @param workbook 工作薄对象
 	 * @return 样式列表
 	 */
-	private Map<String, CellStyle> createStyles(Workbook workbook) {
+	private Map<String, XSSFCellStyle> createStyles(Workbook workbook) {
 		
-		Map<String, CellStyle> styles = new HashMap<>(16);
-		
-		
-		CellStyle style = workbook.createCellStyle();
+		Map<String, XSSFCellStyle> styles = new HashMap<>(16);
+
+
+		XSSFCellStyle style = (XSSFCellStyle) workbook.createCellStyle();
 		
 		// 标题字体格式，并居中显示
 		style.setAlignment(HorizontalAlignment.CENTER);
@@ -229,7 +230,7 @@ public class ExportExcel {
 		styles.put("title", style);
 
 		// 数据的表格边框样式，以及字体格式，居中显示
-		style = workbook.createCellStyle();
+		style = (XSSFCellStyle) workbook.createCellStyle();
 		style.setVerticalAlignment(VerticalAlignment.CENTER);
 		style.setBorderRight(BorderStyle.THIN);
 		style.setRightBorderColor(IndexedColors.GREY_50_PERCENT.getIndex());
@@ -246,25 +247,25 @@ public class ExportExcel {
 		styles.put("data", style);
 		
 		// 左对齐样式
-		style = workbook.createCellStyle();
+		style = (XSSFCellStyle) workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
 		style.setAlignment(HorizontalAlignment.LEFT);
 		styles.put("data1", style);
 
 		// 居中对齐样式
-		style = workbook.createCellStyle();
+		style = (XSSFCellStyle) workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
 		style.setAlignment(HorizontalAlignment.CENTER);
 		styles.put("data2", style);
 
 		// 右对齐样式
-		style = workbook.createCellStyle();
+		style = (XSSFCellStyle) workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
 		style.setAlignment(HorizontalAlignment.RIGHT);
 		styles.put("data3", style);
 		
 		// 表头列表的样式
-		style = workbook.createCellStyle();
+		style = (XSSFCellStyle) workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
 		style.setAlignment(HorizontalAlignment.CENTER);
 		style.setFillForegroundColor(IndexedColors.GREY_50_PERCENT.getIndex());
