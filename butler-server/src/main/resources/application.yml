@@ -10,6 +10,7 @@ spring:
         password: ENC(5vNBfOl28xrSEj1kYIJROw==)
         driver-class-name: com.mysql.cj.jdbc.Driver # 使用最新的驱动，需要在url中添加serverTimezone
         type: com.alibaba.druid.pool.DruidDataSource
+    # redis配置
     redis:
         # 地址
         host: 192.168.56.101
@@ -30,6 +31,11 @@ spring:
                 max-idle: 8
                 # # 连接池中的最小空闲连接
                 min-idle: 0
+    data:
+        mongodb:
+            uri: mongodb://192.168.56.101:27017/admin
+            username: root
+            password: root
 
 # mybatis配置
 mybatis:
@@ -83,7 +89,7 @@ dubbo:
     protocol:
         name: dubbo
         port: 20880
-        payload: 20971520
+        payload: 11557050
     # 注册中心暴露服务地址
     registry:
         address: zookeeper://192.168.56.101:2181

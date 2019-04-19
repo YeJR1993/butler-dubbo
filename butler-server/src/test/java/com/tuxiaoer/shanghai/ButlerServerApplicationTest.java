@@ -1,10 +1,10 @@
 package com.tuxiaoer.shanghai;
 
-import org.jasypt.encryption.StringEncryptor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -18,14 +18,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ButlerServerApplicationTest {
 
     @Autowired
-    StringEncryptor stringEncryptor;
+    private MongoTemplate mongoTemplate;
 
     @Test
     public void test() {
-        String result = stringEncryptor.encrypt("root");
-        System.out.println("==================");
-        System.out.println(result);
-        System.out.println("==================");
     }
 
 }
