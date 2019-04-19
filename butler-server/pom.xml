@@ -12,6 +12,8 @@
     </parent>
 
     <artifactId>butler-server</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <groupId>com.tuxiaoer</groupId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -83,6 +85,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--这里写上main方法所在类的路径-->
+                <configuration>
+                    <mainClass>com.tuxiaoer.shanghai.ButlerServerApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
