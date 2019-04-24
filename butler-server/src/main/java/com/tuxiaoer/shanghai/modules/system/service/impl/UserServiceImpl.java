@@ -10,7 +10,6 @@ import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -28,13 +27,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
-    @Autowired
-    private MongoTemplate mongoTemplate;
-
     @Override
     public Result<User> getUserByUserId(User user) {
         user = userDao.getUserById(user);
-        mongoTemplate.save(user);
         return Result.success(user);
     }
 
