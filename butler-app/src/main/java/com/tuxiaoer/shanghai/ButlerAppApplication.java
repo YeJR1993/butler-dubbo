@@ -1,9 +1,11 @@
 package com.tuxiaoer.shanghai;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import com.tuxiaoer.shanghai.common.utils.AnnotationBeanNameGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author ：YeJR
@@ -13,6 +15,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  */
 @EnableDubbo
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@ComponentScan(nameGenerator = AnnotationBeanNameGenerator.class)
 public class ButlerAppApplication {
 
     public static void main(String[] args) {

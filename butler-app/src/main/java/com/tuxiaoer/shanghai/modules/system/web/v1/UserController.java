@@ -1,13 +1,12 @@
-package com.tuxiaoer.shanghai.modules.system.web;
+package com.tuxiaoer.shanghai.modules.system.web.v1;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tuxiaoer.shanghai.common.utils.PageInfo;
 import com.tuxiaoer.shanghai.common.utils.Result;
+import com.tuxiaoer.shanghai.common.versioning.ApiVersion;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * @author ：YeJR
@@ -15,8 +14,10 @@ import java.util.List;
  * @date ：2019/4/9 17:43
  * @description：用户接口
  */
+
 @RestController
-@RequestMapping(value = "/system/user")
+@ApiVersion(value = 1)
+@RequestMapping(value = "/{version}/system/user")
 public class UserController {
 
     @Reference
@@ -38,12 +39,13 @@ public class UserController {
 
     /**
      * 通过Id获取用户
-     * @param user
+     * @param id
      * @return
      */
+
     @GetMapping(value = "/{id}")
-    public Result<User> getUserById (User user) {
-        return userService.getUserByUserId(user);
+    public Result<User> getUserById1 (@PathVariable Long id) {
+        return userService.getUserByUserId(new User(id));
     }
 
     /**
@@ -76,9 +78,5 @@ public class UserController {
         return userService.delUserByUserId(user);
     }
 
-    @RequestMapping("/all")
-    public Result<List<User>> getAll(User user) {
-        return userService.getUserList(user);
-    }
 
 }
