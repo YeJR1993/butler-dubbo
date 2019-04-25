@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
 import com.github.pagehelper.Page;
 import lombok.Data;

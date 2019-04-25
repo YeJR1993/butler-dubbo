@@ -2,8 +2,8 @@ package com.tuxiaoer.shanghai.modules.system.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
-import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.dao.RoleDao;
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import com.tuxiaoer.shanghai.modules.system.service.RoleService;

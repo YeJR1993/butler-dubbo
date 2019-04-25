@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.constant;
+package com.tuxiaoer.shanghai.common.constant;
 
 /**
  * @author YeJR

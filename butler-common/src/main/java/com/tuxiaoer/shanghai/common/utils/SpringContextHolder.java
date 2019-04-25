@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;

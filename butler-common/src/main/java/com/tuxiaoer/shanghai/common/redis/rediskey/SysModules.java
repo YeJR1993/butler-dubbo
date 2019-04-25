@@ -1,7 +1,7 @@
-package com.tuxiaoer.shanghai.modules.common.redis.rediskey;
+package com.tuxiaoer.shanghai.common.redis.rediskey;
 
 
-import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
+import com.tuxiaoer.shanghai.common.constant.SystemConstants;
 
 /**
  * @author YeJR

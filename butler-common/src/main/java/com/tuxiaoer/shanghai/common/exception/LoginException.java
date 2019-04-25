@@ -1,7 +1,7 @@
-package com.tuxiaoer.shanghai.modules.common.exception;
+package com.tuxiaoer.shanghai.common.exception;
 
 
-import com.tuxiaoer.shanghai.modules.common.utils.CodeMsg;
+import com.tuxiaoer.shanghai.common.utils.CodeMsg;
 
 /**
  * @author: YeJR

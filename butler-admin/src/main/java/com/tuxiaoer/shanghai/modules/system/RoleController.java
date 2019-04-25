@@ -2,9 +2,9 @@ package com.tuxiaoer.shanghai.modules.system;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tuxiaoer.shanghai.common.persistence.BaseController;
-import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
-import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.constant.SystemConstants;
+import com.tuxiaoer.shanghai.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;

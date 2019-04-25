@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.excel;
+package com.tuxiaoer.shanghai.common.excel;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

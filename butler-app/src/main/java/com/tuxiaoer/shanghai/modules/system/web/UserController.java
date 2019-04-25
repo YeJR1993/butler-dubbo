@@ -1,11 +1,13 @@
 package com.tuxiaoer.shanghai.modules.system.web;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author ：YeJR
@@ -72,6 +74,11 @@ public class UserController {
     @DeleteMapping(value = "/{id}")
     public Result<Boolean> deleteUser(User user) {
         return userService.delUserByUserId(user);
+    }
+
+    @RequestMapping("/all")
+    public Result<List<User>> getAll(User user) {
+        return userService.getUserList(user);
     }
 
 }

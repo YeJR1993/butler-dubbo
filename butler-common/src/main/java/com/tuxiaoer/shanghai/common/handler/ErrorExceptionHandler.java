@@ -1,7 +1,7 @@
-package com.tuxiaoer.shanghai.modules.common.handler;
+package com.tuxiaoer.shanghai.common.handler;
 
-import com.tuxiaoer.shanghai.modules.common.exception.GlobalException;
-import com.tuxiaoer.shanghai.modules.common.exception.LoginException;
+import com.tuxiaoer.shanghai.common.exception.GlobalException;
+import com.tuxiaoer.shanghai.common.exception.LoginException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

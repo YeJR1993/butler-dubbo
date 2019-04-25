@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.service;
 
-import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 
 import java.util.List;

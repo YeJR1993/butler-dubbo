@@ -1,8 +1,8 @@
-package com.tuxiaoer.shanghai.modules.common.redis;
+package com.tuxiaoer.shanghai.common.redis;
 
 import com.alibaba.fastjson.JSON;
-import com.tuxiaoer.shanghai.modules.common.utils.SpringContextHolder;
-import com.tuxiaoer.shanghai.modules.common.redis.rediskey.KeyPrefix;
+import com.tuxiaoer.shanghai.common.redis.rediskey.KeyPrefix;
+import com.tuxiaoer.shanghai.common.utils.SpringContextHolder;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.ScanParams;

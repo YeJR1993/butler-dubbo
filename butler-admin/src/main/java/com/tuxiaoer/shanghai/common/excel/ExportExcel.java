@@ -1,7 +1,5 @@
 package com.tuxiaoer.shanghai.common.excel;
 
-import com.tuxiaoer.shanghai.modules.common.excel.ExcelField;
-import com.tuxiaoer.shanghai.modules.common.excel.Reflections;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;

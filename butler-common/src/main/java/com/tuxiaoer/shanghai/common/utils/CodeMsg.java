@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
 /**
  * @author YeJR

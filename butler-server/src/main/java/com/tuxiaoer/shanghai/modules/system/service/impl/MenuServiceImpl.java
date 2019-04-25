@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.dao.MenuDao;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;

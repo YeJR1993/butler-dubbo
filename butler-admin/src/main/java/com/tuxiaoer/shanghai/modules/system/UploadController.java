@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system;
 
-import com.tuxiaoer.shanghai.modules.common.constant.TimeConstants;
-import com.tuxiaoer.shanghai.modules.common.utils.DateTimeUtils;
+import com.tuxiaoer.shanghai.common.constant.TimeConstants;
+import com.tuxiaoer.shanghai.common.utils.DateTimeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

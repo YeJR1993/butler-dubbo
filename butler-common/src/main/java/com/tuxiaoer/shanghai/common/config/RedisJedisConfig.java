@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.config;
+package com.tuxiaoer.shanghai.common.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

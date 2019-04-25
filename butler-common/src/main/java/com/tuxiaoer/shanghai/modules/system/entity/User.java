@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.tuxiaoer.shanghai.modules.common.excel.ExcelField;
+import com.tuxiaoer.shanghai.common.excel.ExcelField;
 import lombok.Data;
 
 import java.io.Serializable;

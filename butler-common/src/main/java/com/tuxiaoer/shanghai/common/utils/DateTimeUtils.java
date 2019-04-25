@@ -1,6 +1,6 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
-import com.tuxiaoer.shanghai.modules.common.constant.TimeConstants;
+import com.tuxiaoer.shanghai.common.constant.TimeConstants;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;
 

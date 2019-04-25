@@ -1,6 +1,6 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
-import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
+import com.tuxiaoer.shanghai.common.constant.SystemConstants;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
 

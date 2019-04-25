@@ -1,6 +1,6 @@
 package com.tuxiaoer.shanghai.common.persistence;
 
-import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
+import com.tuxiaoer.shanghai.common.constant.SystemConstants;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;

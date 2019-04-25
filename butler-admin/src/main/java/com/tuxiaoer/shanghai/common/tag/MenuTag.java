@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.common.tag;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.tuxiaoer.shanghai.modules.common.utils.SpringContextHolder;
+import com.tuxiaoer.shanghai.common.utils.SpringContextHolder;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;

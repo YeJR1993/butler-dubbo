@@ -2,9 +2,9 @@ package com.tuxiaoer.shanghai.modules.system.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
-import com.tuxiaoer.shanghai.modules.common.utils.PageInfo;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
-import com.tuxiaoer.shanghai.modules.common.utils.UserUtil;
+import com.tuxiaoer.shanghai.common.utils.PageInfo;
+import com.tuxiaoer.shanghai.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.UserUtil;
 import com.tuxiaoer.shanghai.modules.system.dao.UserDao;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
@@ -40,7 +40,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Result<List<User>> getUserList(User user) {
-        return Result.success(userDao.getUserList(user));
+        List<User> userList = userDao.getUserList(user);
+        return Result.success(userList);
     }
 
     @Override

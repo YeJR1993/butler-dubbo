@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.common.shiro;
 
-import com.tuxiaoer.shanghai.modules.common.redis.JedisUtils;
-import com.tuxiaoer.shanghai.modules.common.redis.rediskey.SysModules;
+import com.tuxiaoer.shanghai.common.redis.JedisUtils;
+import com.tuxiaoer.shanghai.common.redis.rediskey.SysModules;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import com.tuxiaoer.shanghai.modules.system.entity.User;

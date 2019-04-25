@@ -11,6 +11,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 /**
  * @author ：YeJR
  * @version : 1.0
@@ -36,7 +38,9 @@ public class ButlerServerApplicationTest {
 
     @Test
     public void test1() {
-        userDao.getUserList(new User());
+        List<User> list = userDao.getUserList(new User());
+        System.out.println(list.size());
+        mongoTemplate.insert(list, "list");
     }
 
     @Test

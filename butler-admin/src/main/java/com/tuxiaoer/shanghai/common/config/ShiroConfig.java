@@ -3,7 +3,7 @@ package com.tuxiaoer.shanghai.common.config;
 import com.tuxiaoer.shanghai.common.shiro.MyShiroRealm;
 import com.tuxiaoer.shanghai.common.shiro.ShiroRedisCacheManager;
 import com.tuxiaoer.shanghai.common.shiro.ShiroRedisSessionDao;
-import com.tuxiaoer.shanghai.modules.common.constant.SystemConstants;
+import com.tuxiaoer.shanghai.common.constant.SystemConstants;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.mgt.SecurityManager;

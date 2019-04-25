@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.redis.rediskey;
+package com.tuxiaoer.shanghai.common.redis.rediskey;
 
 /**
  * @author YeJR

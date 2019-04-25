@@ -2,10 +2,10 @@ package com.tuxiaoer.shanghai.modules.system;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.tuxiaoer.shanghai.common.shiro.LoginToken;
-import com.tuxiaoer.shanghai.modules.common.exception.LoginException;
-import com.tuxiaoer.shanghai.modules.common.utils.CodeMsg;
-import com.tuxiaoer.shanghai.modules.common.utils.RandomValidateCodeUtil;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.exception.LoginException;
+import com.tuxiaoer.shanghai.common.utils.CodeMsg;
+import com.tuxiaoer.shanghai.common.utils.RandomValidateCodeUtil;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;

@@ -1,7 +1,7 @@
 package com.tuxiaoer.shanghai.modules.system.web;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.tuxiaoer.shanghai.modules.common.utils.Result;
+import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.modules.system.entity.Menu;
 import com.tuxiaoer.shanghai.modules.system.service.MenuService;
 import org.springframework.web.bind.annotation.GetMapping;

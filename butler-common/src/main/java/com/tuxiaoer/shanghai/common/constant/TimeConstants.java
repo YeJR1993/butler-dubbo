@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.constant;
+package com.tuxiaoer.shanghai.common.constant;
 /**
 * @author: YeJR 
 * @version: 2018年7月24日 下午4:43:27

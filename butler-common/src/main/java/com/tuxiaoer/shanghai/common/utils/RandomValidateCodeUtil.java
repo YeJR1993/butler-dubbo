@@ -1,7 +1,7 @@
-package com.tuxiaoer.shanghai.modules.common.utils;
+package com.tuxiaoer.shanghai.common.utils;
 
-import com.tuxiaoer.shanghai.modules.common.redis.JedisUtils;
-import com.tuxiaoer.shanghai.modules.common.redis.rediskey.SysModules;
+import com.tuxiaoer.shanghai.common.redis.JedisUtils;
+import com.tuxiaoer.shanghai.common.redis.rediskey.SysModules;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.slf4j.Logger;

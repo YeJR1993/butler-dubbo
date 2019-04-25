@@ -1,4 +1,4 @@
-package com.tuxiaoer.shanghai.modules.common.excel;
+package com.tuxiaoer.shanghai.common.excel;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;

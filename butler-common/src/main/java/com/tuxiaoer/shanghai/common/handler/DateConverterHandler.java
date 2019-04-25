@@ -1,8 +1,8 @@
-package com.tuxiaoer.shanghai.modules.common.handler;
+package com.tuxiaoer.shanghai.common.handler;
 
-import com.tuxiaoer.shanghai.modules.common.exception.GlobalException;
-import com.tuxiaoer.shanghai.modules.common.utils.CodeMsg;
-import com.tuxiaoer.shanghai.modules.common.utils.DateTimeUtils;
+import com.tuxiaoer.shanghai.common.exception.GlobalException;
+import com.tuxiaoer.shanghai.common.utils.CodeMsg;
+import com.tuxiaoer.shanghai.common.utils.DateTimeUtils;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
