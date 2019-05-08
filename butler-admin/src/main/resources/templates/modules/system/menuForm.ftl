@@ -18,6 +18,15 @@
                   			</div>
                     	</div>
                 	</div>
+					<div class="am-form-group" hidden="hidden">
+						<label  class="am-u-sm-3 am-form-label">版本</label>
+						<div class="am-u-sm-9">
+							<div>
+								<input autocomplete="off" type="text" name="version" id="version" value="${menu.version !''}">
+								<small></small>
+							</div>
+						</div>
+					</div>
                 	<div class="am-form-group">
                  		<label  class="am-u-sm-3 am-form-label"><span class="required">*</span>上级菜单</label>
                   		<div class="am-u-sm-9">

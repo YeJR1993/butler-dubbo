@@ -20,7 +20,7 @@ public class PageInfo<T> implements Serializable {
     /**
      * 当前页码
      */
-    private int pageNo;
+    private int pageNum;
     
     /**
      * 一页显示多少条
@@ -102,14 +102,14 @@ public class PageInfo<T> implements Serializable {
 	public PageInfo(List<T> list) {
         if (list instanceof Page) {
             Page page = (Page) list;
-            this.pageNo = page.getPageNum();
+            this.pageNum = page.getPageNum();
             this.pageSize = page.getPageSize();
 
             this.pages = page.getPages();
             this.list = page;
             this.total = page.getTotal();
         } else if (list instanceof Collection) {
-            this.pageNo = 1;
+            this.pageNum = 1;
             this.pageSize = list.size();
 
             this.pages = 1;
@@ -128,8 +128,8 @@ public class PageInfo<T> implements Serializable {
      * 判定页面边界
      */
     private void judgePageBoudary() {
-        isFirstPage = pageNo == 1;
-        isLastPage = pageNo == pages;
+        isFirstPage = pageNum == 1;
+        isLastPage = pageNum == pages;
     }
 
 
@@ -147,35 +147,35 @@ public class PageInfo<T> implements Serializable {
 			this.last = this.first;
 		}
 		
-		if (this.pageNo <= 1) {
-			this.pageNo = this.first;
+		if (this.pageNum <= 1) {
+			this.pageNum = this.first;
 			this.isFirstPage=true;
 		}
 
-		if (this.pageNo >= this.last) {
-			this.pageNo = this.last;
+		if (this.pageNum >= this.last) {
+			this.pageNum = this.last;
 			this.isLastPage = true;
 		}
 
-		if (this.pageNo < this.last - 1) {
-			this.next = this.pageNo + 1;
+		if (this.pageNum < this.last - 1) {
+			this.next = this.pageNum + 1;
 		} else {
 			this.next = this.last;
 		}
 
-		if (this.pageNo > 1) {
-			this.prev = this.pageNo - 1;
+		if (this.pageNum > 1) {
+			this.prev = this.pageNum - 1;
 		} else {
 			this.prev = this.first;
 		}
 		
 		// 如果当前页小于首页
-		if (this.pageNo < this.first) {
-			this.pageNo = this.first;
+		if (this.pageNum < this.first) {
+			this.pageNum = this.first;
 		}
 		// 如果当前页大于尾页
-		if (this.pageNo > this.last) {
-			this.pageNo = this.last;
+		if (this.pageNum > this.last) {
+			this.pageNum = this.last;
 		}
 		
 	}
@@ -187,8 +187,8 @@ public class PageInfo<T> implements Serializable {
     public String getHtml(){
         StringBuilder sb = new StringBuilder();
         sb.append("<div class=\"fixed-table-pagination\" style=\"display: block;\">");
-        long startIndex = total == 0 ? 0 : (pageNo-1) * pageSize + 1;
-        long endIndex = pageNo * pageSize <=total ? pageNo * pageSize : total;
+        long startIndex = total == 0 ? 0 : (pageNum-1) * pageSize + 1;
+        long endIndex = pageNum * pageSize <=total ? pageNum * pageSize : total;
         sb.append("<div class=\"pull-left pagination-detail\">");
         sb.append("<span class=\"pagination-info\">显示第 "+startIndex+" 到第 "+ endIndex +" 条记录，总共 "+total+" 条记录</span>");
         sb.append("<span class=\"page-list\">每页显示 <span class=\"btn-group dropup\">");
@@ -196,10 +196,10 @@ public class PageInfo<T> implements Serializable {
         sb.append("<span class=\"page-size\">"+pageSize+"</span> <span class=\"caret\"></span>");
         sb.append("</button>");
         sb.append("<ul class=\"dropdown-menu page-ul\" role=\"menu\">");
-        sb.append("<li onclick=\""+funcName+"("+pageNo+",10,'"+funcParam+"');\" class=\""+getSelected(pageSize,10)+ " page-li\"><a href=\"javascript:;\">10</a></li>");
-        sb.append("<li onclick=\""+funcName+"("+pageNo+",25,'"+funcParam+"');\" class=\""+getSelected(pageSize,25)+ " page-li\"><a href=\"javascript:;\">25</a></li>");
-        sb.append("<li onclick=\""+funcName+"("+pageNo+",50,'"+funcParam+"');\" class=\""+getSelected(pageSize,50)+ " page-li\"><a href=\"javascript:;\">50</a></li>");
-        sb.append("<li onclick=\""+funcName+"("+pageNo+",100,'"+funcParam+"');\" class=\""+getSelected(pageSize,100)+ " page-li\"><a href=\"javascript:;\">100</a></li>");
+        sb.append("<li onclick=\""+funcName+"("+pageNum+",10,'"+funcParam+"');\" class=\""+getSelected(pageSize,10)+ " page-li\"><a href=\"javascript:;\">10</a></li>");
+        sb.append("<li onclick=\""+funcName+"("+pageNum+",25,'"+funcParam+"');\" class=\""+getSelected(pageSize,25)+ " page-li\"><a href=\"javascript:;\">25</a></li>");
+        sb.append("<li onclick=\""+funcName+"("+pageNum+",50,'"+funcParam+"');\" class=\""+getSelected(pageSize,50)+ " page-li\"><a href=\"javascript:;\">50</a></li>");
+        sb.append("<li onclick=\""+funcName+"("+pageNum+",100,'"+funcParam+"');\" class=\""+getSelected(pageSize,100)+ " page-li\"><a href=\"javascript:;\">100</a></li>");
         sb.append("</ul>");
         sb.append("</span> 条记录</span>");
         sb.append("</div>");
@@ -207,7 +207,7 @@ public class PageInfo<T> implements Serializable {
         sb.append("<div class=\"pull-right pagination-roll\">");
         sb.append("<ul class=\"pagination pagination-outline\">");
         // 如果是首页
-        if (pageNo == first) {
+        if (pageNum == first) {
             sb.append("<li class=\"paginate_button previous  \"><a class=\"aPage-left aPage\" style=\"cursor: not-allowed;\" href=\"javascript:\"><i class=\"iconfont icon-zuizuo\"></i></a></li>\n");
             sb.append("<li class=\"paginate_button previous  \"><a class=\"aPage-middle aPage\" style=\"cursor: not-allowed;\" href=\"javascript:\"><i class=\"iconfont icon-xiangzuo\"></i></a></li>\n");
         } else {
@@ -215,7 +215,7 @@ public class PageInfo<T> implements Serializable {
             sb.append("<li class=\"paginate_button previous\"><a class=\"aPage-middle aPage\" href=\"javascript:\" onclick=\""+funcName+"("+prev+","+pageSize+",'"+funcParam+"');\"><i class=\"iconfont icon-xiangzuo\"></i></a></li>\n");
         }
 
-        int begin = pageNo - (length / 2);
+        int begin = pageNum - (length / 2);
 
         if (begin < first) {
             begin = first;
@@ -243,7 +243,7 @@ public class PageInfo<T> implements Serializable {
         }
 
         for (int i = begin; i <= end; i++) {
-            if (i == pageNo) {
+            if (i == pageNum) {
                 sb.append("<li class=\"paginate_button page-right-active\"><a class=\"aPage-middle\" href=\"javascript:\">" + (i + 1 - first)
                         + "</a></li>\n");
             } else {
@@ -262,7 +262,7 @@ public class PageInfo<T> implements Serializable {
                     + (i + 1 - first) + "</a></li>\n");
         }
 
-        if (pageNo == last) {
+        if (pageNum == last) {
             sb.append("<li class=\"paginate_button next  \"><a class=\"aPage-middle aPage\" style=\"cursor: not-allowed;\" href=\"javascript:\"><i class=\"iconfont icon-xiangyou\"></i></a></li>\n");
             sb.append("<li class=\"paginate_button next  \"><a class=\"aPage-right  aPage\" style=\"cursor: not-allowed;\" href=\"javascript:\"><i class=\"iconfont icon-zuiyou\"></i></a></li>\n");
         } else {
@@ -279,12 +279,12 @@ public class PageInfo<T> implements Serializable {
 
     /**
      * 是否是选中状态
-     * @param pageNo
-     * @param selectedPageNo
+     * @param pageNum
+     * @param selectedPageNum
      * @return
      */
-    protected String getSelected(int pageNo, int selectedPageNo){
-        if(pageNo == selectedPageNo){
+    protected String getSelected(int pageNum, int selectedPageNum){
+        if(pageNum == selectedPageNum){
             return "page-a-active";
         }else{
             return "";

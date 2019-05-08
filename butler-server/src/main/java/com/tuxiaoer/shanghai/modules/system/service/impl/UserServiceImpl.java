@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
         String newPassword = UserUtil.encryptPassword(user.getUsername(), user.getPassword());
         user.setPassword(newPassword);
         Integer result = userDao.insertUser(user);
-        if (result != null && result > 0) {
+        if (result != null && result > 0 && user.getRoleIds() != null) {
             userDao.insertUserRole(user);
         }
         return Result.success(user);

@@ -18,6 +18,15 @@
                   			</div>
                     	</div>
                 	</div>
+					<div class="am-form-group" hidden="hidden">
+						<label  class="am-u-sm-3 am-form-label">版本</label>
+						<div class="am-u-sm-9">
+							<div>
+								<input autocomplete="off" type="text" name="version" id="version" value="${user.version !''}">
+								<small></small>
+							</div>
+						</div>
+					</div>
                 	<div class="am-form-group">
                  		<label  class="am-u-sm-3 am-form-label"><span class="required">*</span>用户名</label>
                   		<div class="am-u-sm-9">
@@ -32,7 +41,7 @@
                  		<label  class="am-u-sm-3 am-form-label"><#if !user.id??><span class="required">*</span></#if>密码</label>
                   		<div class="am-u-sm-9">
                   			<div>
-	                       		<input autocomplete="off" type="password" name="password" id="password" placeholder="密码" ${user.id !'required'}>
+	                       		<input autocomplete="off" type="text" name="password" id="password" placeholder="密码" ${user.id !'required'}>
 	                       		<small>密码只能包含字母，数字，下划线，减号</small>
                   			</div>
                     	</div>
@@ -41,7 +50,7 @@
                  		<label  class="am-u-sm-3 am-form-label"><#if !user.id??><span class="required">*</span></#if>确认密码</label>
                   		<div class="am-u-sm-9">
                   			<div>
-	                       		<input autocomplete="off" type="password" id="confirmPassword" name="confirmPassword" placeholder="确认密码">
+	                       		<input autocomplete="off" type="text" id="confirmPassword" name="confirmPassword" placeholder="确认密码">
 	                       		<small>请输入相同的确认密码</small>
                   			</div>
                     	</div>

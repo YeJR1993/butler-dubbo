@@ -4,6 +4,10 @@ server:
 
 # redis配置
 spring:
+    freemarker:
+        settings:
+            # 配置freemarker 数字格式不用逗号隔开配置
+            number_format: 0.##
     redis:
         # 地址
         host: 192.168.56.101

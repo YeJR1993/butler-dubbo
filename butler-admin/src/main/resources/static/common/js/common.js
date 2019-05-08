@@ -262,13 +262,13 @@ function exportData(msg, href) {
 
 /**
  * 分页
- * @param pageNo
+ * @param pageNum
  * @param pageSize
  * @param param
  * @returns
  */
-function page(pageNo, pageSize, param) {
-	$("#pageNo").val(pageNo);
+function page(pageNum, pageSize, param) {
+	$("#pageNum").val(pageNum);
 	$("#pageSize").val(pageSize);
 	$("#searchForm").submit();
 	//弹出加载层

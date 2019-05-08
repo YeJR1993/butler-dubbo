@@ -44,7 +44,7 @@
 	                            </div>
 	                        </div>
 							<div class="am-u-sm-12 am-u-md-3">
-								<input id="pageNo" name="pageNo" type="hidden" value="${page.pageNo}"/>
+								<input id="pageNum" name="pageNum" type="hidden" value="${page.pageNum}"/>
 								<input id="pageSize" name="pageSize" type="hidden" value="${page.pageSize}"/>
 								<div class="am-input-group am-input-group-sm">
 									<input autocomplete="off" type="text" class="am-form-field" placeholder="输入查询的角色名" name="roleName" value="${role.roleName !''}">
