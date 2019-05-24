@@ -12,11 +12,12 @@
         <module name="butler-admin" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="butler-server" options="" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="butler-admin" target="1.8" />
+      <module name="butler-app" target="1.8" />
+      <module name="butler-common" target="1.8" />
+      <module name="butler-dubbo" target="1.8" />
+      <module name="butler-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
