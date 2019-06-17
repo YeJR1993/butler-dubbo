@@ -30,11 +30,12 @@ public interface UserService {
     Result<User> getUserByName(User user);
 
     /**
-     * 查询用户列表
+     * 查询用户列表, 数据可能较大使用mongodb存储(按照用户)，返回存储的
      * @param user
+     * @param sessionId
      * @return
      */
-    Result<List<User>> getUserList(User user);
+    Result<List<String>> getUserList(User user, String sessionId);
 
     /**
      * （分页）查询用户列表

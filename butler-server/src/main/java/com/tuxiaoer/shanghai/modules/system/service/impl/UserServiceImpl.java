@@ -2,6 +2,7 @@ package com.tuxiaoer.shanghai.modules.system.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
+import com.tuxiaoer.shanghai.common.utils.MongoUtil;
 import com.tuxiaoer.shanghai.common.utils.PageInfo;
 import com.tuxiaoer.shanghai.common.utils.Result;
 import com.tuxiaoer.shanghai.common.utils.UserUtil;
@@ -10,6 +11,7 @@ import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -27,6 +29,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
     @Override
     public Result<User> getUserByUserId(User user) {
         user = userDao.getUserById(user);
@@ -39,9 +44,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Result<List<User>> getUserList(User user) {
+    public Result<List<String>> getUserList(User user, String sessionId) {
         List<User> userList = userDao.getUserList(user);
-        return Result.success(userList);
+        List<String> mongodata = MongoUtil.saveBigDataForCollection(sessionId, userList, mongoTemplate, "userList");
+        System.out.println(mongodata.size());
+        return Result.success(mongodata);
     }
 
     @Override

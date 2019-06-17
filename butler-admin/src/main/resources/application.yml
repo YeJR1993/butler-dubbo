@@ -28,6 +28,9 @@ spring:
                 max-idle: 8
                 # # 连接池中的最小空闲连接
                 min-idle: 0
+    data:
+        mongodb:
+            uri: mongodb://192.168.56.101:27017/admin
 
 # dubbo 配置
 dubbo:

@@ -1,12 +1,10 @@
 package com.tuxiaoer.shanghai.common.excel;
 
+import com.google.common.collect.Lists;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
-import org.apache.poi.xssf.streaming.SXSSFRow;
-import org.apache.poi.xssf.streaming.SXSSFSheet;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
 import org.apache.shiro.SecurityUtils;
@@ -34,7 +32,7 @@ public class ExportExcel {
 	private final static Logger logger = LoggerFactory.getLogger(ExportExcel.class);
 
 	/**
-	 * Excel的文档对象，扩展名是.xlsx
+	 * Excel的文档对象， 操作Excel2007的版本，扩展名是.xlsx 
 	 * 基于XSSF的低内存占用的API----SXSSF
 	 * 当数据量超出65536条后，在使用HSSFWorkbook或XSSFWorkbook，程序会报OutOfMemoryError
 	 */
@@ -43,12 +41,12 @@ public class ExportExcel {
 	/**
 	 * 在workbook中添加一个sheet,对应Excel文件中的sheet
 	 */
-	private SXSSFSheet sheet;
+	private Sheet sheet;
 
 	/**
 	 * 样式列表
 	 */
-	private Map<String, XSSFCellStyle> styles;
+	private Map<String, CellStyle> styles;
 
 	/**
 	 * 当前行号
@@ -58,7 +56,7 @@ public class ExportExcel {
 	/**
 	 * 注解列表（Object[]{ ExcelField, Field/Method }）
 	 */
-	List<Object[]> annotationList = new ArrayList<>();
+	List<Object[]> annotationList = Lists.newArrayList();
 	
 	/**
 	 * 构造函数
@@ -149,7 +147,7 @@ public class ExportExcel {
 		});
 		
 		// Initialize
-		List<String> headerList = new ArrayList<>();
+		List<String> headerList = Lists.newArrayList();
 		for (Object[] os : annotationList) {
 			String t = ((ExcelField) os[0]).title();
 			headerList.add(t);
@@ -171,7 +169,7 @@ public class ExportExcel {
 		this.styles = createStyles(workbook);
 		// 创建表格标题 title
 		if (StringUtils.isNotBlank(title)){
-			SXSSFRow titleRow = sheet.createRow(rownum++);
+			Row titleRow = sheet.createRow(rownum++);
 			titleRow.setHeightInPoints(30);
 			Cell titleCell = titleRow.createCell(0);
 			titleCell.setCellStyle(styles.get("title"));
@@ -182,7 +180,7 @@ public class ExportExcel {
 		if (headerList == null){
 			throw new RuntimeException("headerList not null!");
 		}
-		SXSSFRow headerRow = sheet.createRow(rownum++);
+		Row headerRow = sheet.createRow(rownum++);
 		headerRow.setHeightInPoints(16);
 		for (int i = 0; i < headerList.size(); i++) {
 			Cell cell = headerRow.createCell(i);
@@ -210,33 +208,33 @@ public class ExportExcel {
 	 * @param workbook 工作薄对象
 	 * @return 样式列表
 	 */
-	private Map<String, XSSFCellStyle> createStyles(Workbook workbook) {
+	private Map<String, CellStyle> createStyles(Workbook workbook) {
 		
-		Map<String, XSSFCellStyle> styles = new HashMap<>(16);
-
-
-		XSSFCellStyle style = (XSSFCellStyle) workbook.createCellStyle();
+		Map<String, CellStyle> styles = new HashMap<String, CellStyle>(16);
+		
+		
+		CellStyle style = workbook.createCellStyle();
 		
 		// 标题字体格式，并居中显示
-		style.setAlignment(HorizontalAlignment.CENTER);
-		style.setVerticalAlignment(VerticalAlignment.CENTER);
+		style.setAlignment(CellStyle.ALIGN_CENTER);
+		style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
 		Font titleFont = workbook.createFont();
 		titleFont.setFontName("Arial");
 		titleFont.setFontHeightInPoints((short) 16);
-		titleFont.setBold(true);
+		titleFont.setBoldweight(Font.BOLDWEIGHT_BOLD);
 		style.setFont(titleFont);
 		styles.put("title", style);
 
 		// 数据的表格边框样式，以及字体格式，居中显示
-		style = (XSSFCellStyle) workbook.createCellStyle();
-		style.setVerticalAlignment(VerticalAlignment.CENTER);
-		style.setBorderRight(BorderStyle.THIN);
+		style = workbook.createCellStyle();
+		style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
+		style.setBorderRight(CellStyle.BORDER_THIN);
 		style.setRightBorderColor(IndexedColors.GREY_50_PERCENT.getIndex());
-		style.setBorderLeft(BorderStyle.THIN);
+		style.setBorderLeft(CellStyle.BORDER_THIN);
 		style.setLeftBorderColor(IndexedColors.GREY_50_PERCENT.getIndex());
-		style.setBorderTop(BorderStyle.THIN);
+		style.setBorderTop(CellStyle.BORDER_THIN);
 		style.setTopBorderColor(IndexedColors.GREY_50_PERCENT.getIndex());
-		style.setBorderBottom(BorderStyle.THIN);
+		style.setBorderBottom(CellStyle.BORDER_THIN);
 		style.setBottomBorderColor(IndexedColors.GREY_50_PERCENT.getIndex());
 		Font dataFont = workbook.createFont();
 		dataFont.setFontName("Arial");
@@ -245,32 +243,33 @@ public class ExportExcel {
 		styles.put("data", style);
 		
 		// 左对齐样式
-		style = (XSSFCellStyle) workbook.createCellStyle();
+		style = workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
-		style.setAlignment(HorizontalAlignment.LEFT);
+		style.setAlignment(CellStyle.ALIGN_LEFT);
 		styles.put("data1", style);
 
 		// 居中对齐样式
-		style = (XSSFCellStyle) workbook.createCellStyle();
+		style = workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
-		style.setAlignment(HorizontalAlignment.CENTER);
+		style.setAlignment(CellStyle.ALIGN_CENTER);
 		styles.put("data2", style);
 
 		// 右对齐样式
-		style = (XSSFCellStyle) workbook.createCellStyle();
+		style = workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
-		style.setAlignment(HorizontalAlignment.RIGHT);
+		style.setAlignment(CellStyle.ALIGN_RIGHT);
 		styles.put("data3", style);
 		
 		// 表头列表的样式
-		style = (XSSFCellStyle) workbook.createCellStyle();
+		style = workbook.createCellStyle();
 		style.cloneStyleFrom(styles.get("data"));
-		style.setAlignment(HorizontalAlignment.CENTER);
+		style.setAlignment(CellStyle.ALIGN_CENTER);
 		style.setFillForegroundColor(IndexedColors.GREY_50_PERCENT.getIndex());
+		style.setFillPattern(CellStyle.SOLID_FOREGROUND);
 		Font headerFont = workbook.createFont();
 		headerFont.setFontName("Arial");
 		headerFont.setFontHeightInPoints((short) 10);
-		titleFont.setBold(true);
+		titleFont.setBoldweight(Font.BOLDWEIGHT_BOLD);
 		headerFont.setColor(IndexedColors.WHITE.getIndex());
 		style.setFont(headerFont);
 		styles.put("header", style);
@@ -283,7 +282,7 @@ public class ExportExcel {
 	 * 添加一行
 	 * @return 行对象
 	 */
-	public SXSSFRow addRow(){
+	public Row addRow(){
 		return sheet.createRow(rownum++);
 	}
 	
@@ -295,10 +294,10 @@ public class ExportExcel {
 	 * @param val 添加值
 	 * @return 单元格对象
 	 */
-	public Cell addCell(SXSSFRow row, int column, Object val){
+	public Cell addCell(Row row, int column, Object val){
 		return this.addCell(row, column, val, 0, Class.class);
 	}
-
+	
 	/**
 	 * 添加一个单元格
 	 * @param row 添加的行
@@ -307,7 +306,7 @@ public class ExportExcel {
 	 * @param align 对齐方式（1：靠左；2：居中；3：靠右）
 	 * @return 单元格对象
 	 */
-	public Cell addCell(SXSSFRow row, int column, Object val, int align, Class<?> fieldType){
+	public Cell addCell(Row row, int column, Object val, int align, Class<?> fieldType){
 		Cell cell = row.createCell(column);
 		CellStyle style = styles.get("data"+(align>=1&&align<=3?align:""));
 		try {
@@ -349,7 +348,7 @@ public class ExportExcel {
 	public <E> ExportExcel setDataList(List<E> list){
 		for (E e : list){
 			int colunm = 0;
-			SXSSFRow row = this.addRow();
+			Row row = this.addRow();
 			StringBuilder sb = new StringBuilder();
 			for (Object[] os : annotationList){
 				ExcelField ef = (ExcelField)os[0];
@@ -366,6 +365,7 @@ public class ExportExcel {
 						}
 					}
 				}catch(Exception ex) {
+					// Failure to ignore
 					val = "";
 				}
 				this.addCell(row, colunm++, val, ef.align(), ef.fieldType());

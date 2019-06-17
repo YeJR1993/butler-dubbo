@@ -1,5 +1,6 @@
 package com.tuxiaoer.shanghai;
 
+import com.tuxiaoer.shanghai.common.utils.MongoUtil;
 import com.tuxiaoer.shanghai.modules.system.dao.UserDao;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import org.junit.Test;
@@ -7,8 +8,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
@@ -24,36 +23,28 @@ import java.util.List;
 public class ButlerServerApplicationTest {
 
     @Autowired
-    private MongoTemplate mongoTemplate;
+    private UserDao userDao;
 
     @Autowired
-    private UserDao userDao;
+    private MongoTemplate mongoTemplate;
 
     @Test
     public void test() {
-        User user = userDao.getUserByName(new User("admin"));
-        mongoTemplate.save(user, "user-admin");
-        System.out.println(user);
+        List<User> list = userDao.getUserList(new User());
+        List<String> names = MongoUtil.saveBigDataForCollection("1",list, mongoTemplate, "userList");
     }
 
     @Test
     public void test1() {
-        List<User> list = userDao.getUserList(new User());
-        System.out.println(list.size());
-        mongoTemplate.insert(list, "list");
+        List<User> users = mongoTemplate.findAll(User.class, "userList0");
+        System.out.println(users.get(0));
     }
 
     @Test
     public void test2() {
-        Query query = new Query();
-        User user = mongoTemplate.findOne(query, User.class, "user-admin");
-        System.out.println(user);
+        mongoTemplate.dropCollection("userList1");
     }
 
-    @Test
-    public void test3() {
-        Query query = new Query(Criteria.where("username").is("admin"));
-        mongoTemplate.remove(query, User.class, "user-admin");
-    }
+
 
 }

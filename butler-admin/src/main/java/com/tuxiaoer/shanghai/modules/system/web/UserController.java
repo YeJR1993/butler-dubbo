@@ -10,8 +10,12 @@ import com.tuxiaoer.shanghai.modules.system.entity.Role;
 import com.tuxiaoer.shanghai.modules.system.entity.User;
 import com.tuxiaoer.shanghai.modules.system.service.RoleService;
 import com.tuxiaoer.shanghai.modules.system.service.UserService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.subject.Subject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +24,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,6 +43,8 @@ public class UserController extends BaseController {
     @Reference
     private RoleService roleService;
 
+    @Autowired
+    private MongoTemplate mongoTemplate;
     /**
      * list列表
      *
@@ -142,8 +149,15 @@ public class UserController extends BaseController {
     @RequiresPermissions(value = "system:export:user")
     public String export(User user, HttpServletResponse response) throws IOException {
         String fileName = "用户数据" + System.currentTimeMillis() + ".xlsx";
-        Result<List<User>> listResult = userService.getUserList(user);
-        List<User> list = listResult.getData();
+        Result<List<String>> listResult = userService.getUserList(user, SecurityUtils.getSubject().getSession().getId().toString());
+        List<String> dataKey = listResult.getData();
+        List<User> list = new ArrayList<>();
+        for (int i = 0; i < dataKey.size(); i++) {
+            String collectionName = dataKey.get(i);
+            List<User> users = mongoTemplate.findAll(User.class, collectionName);
+            mongoTemplate.dropCollection(collectionName);
+            list.addAll(users);
+        }
         new ExportExcel("用户数据", User.class).setDataList(list).write(response, fileName).dispose();
         return null;
     }
